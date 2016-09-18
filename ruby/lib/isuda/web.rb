@@ -82,10 +82,6 @@ module Isuda
           end
       end
 
-      def stars(keyword)
-        star_db.xquery(%| select * from star where keyword = ? |, keyword).to_a
-      end
-
       def register(name, pw)
         chars = [*'A'..'~']
         salt = 1.upto(20).map { chars.sample }.join('')
@@ -133,7 +129,7 @@ module Isuda
       end
 
       def load_stars(keyword)
-        stars(keyword)
+        star_db.xquery(%| select * from star where keyword = ? |, keyword).to_a
       end
 
       def redirect_found(path)
@@ -265,6 +261,13 @@ module Isuda
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
       redirect_found '/'
+    end
+
+    get '/stars' do
+      keyword = params[:keyword] || ''
+      stars = load_stars(keyword)
+      content_type :json
+      JSON.generate(stars: stars)
     end
 
     post '/stars' do
