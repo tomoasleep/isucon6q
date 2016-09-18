@@ -92,9 +92,7 @@ module Isuda
         ! validation['valid']
       end
 
-      def htmlify(content)
-        keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
-        pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      def htmlify(content, pattern)
         kw2hash = {}
         hashed_content = content.gsub(/(#{pattern})/) {|m|
           matched_keyword = $1
@@ -149,8 +147,12 @@ module Isuda
         LIMIT #{per_page}
         OFFSET #{per_page * (page - 1)}
       |)
+
+      keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
+      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+
       entries.each do |entry|
-        entry[:html] = htmlify(entry[:description])
+        entry[:html] = htmlify(entry[:description], pattern)
         entry[:stars] = load_stars(entry[:keyword])
       end
 
@@ -233,8 +235,11 @@ module Isuda
       keyword = params[:keyword] or halt(400)
 
       entry = db.xquery(%| select * from entry where keyword = ? |, keyword).first or halt(404)
+      keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
+      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+
       entry[:stars] = load_stars(entry[:keyword])
-      entry[:html] = htmlify(entry[:description])
+      entry[:html] = htmlify(entry[:description], pattern)
 
       locals = {
         entry: entry,
