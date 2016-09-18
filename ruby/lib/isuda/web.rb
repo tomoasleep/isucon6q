@@ -150,19 +150,51 @@ module Isuda
         redirect(path, 302)
       end
 
-      def build_keyword_pattern(reset: false)
-        redis.set("build_keyword_pattern", nil) if reset
-        cached("build_keyword_pattern") do
-          keywords = db.xquery(%| select keyword from entry order by character_length(keyword) desc |)
-          pat = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      def get_keyword_pattern(reset: false)
+        cached("keyword_pattern") do
+          init_keyword_pattern
         end
+      end
+
+      def delete_and_reset(length)
+        v = get_keyword_pattern
+        keywords = db.prepare(%| select keyword, keyword_length from entry  where keyword_length = ? |).execute(
+          length
+        )
+        v[length] = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+        redis.set("keyword_pattern", v)
+        v
+      end
+
+      def build_keyword_pattern(reset: false)
+        v = get_keyword_pattern(reset)
+        v.to_a.reverse.join("|")
+      end
+
+      def reset_and_get(key, length)
+        k = Regexp.escape(key)
+        v = get_keyword_pattern(false)
+        v[length] = v[length] ? "#{v[length]}|#{k}" : k
+        redis.set("keyword_pattern", v)
+        v
+      end
+
+      def init_keyword_pattern
+        keys = db.xquery(%| select keyword, keyword_length from entry|)
+        v = {}
+        keys.each do |key|
+          k = Regexp.escape(key[:keyword])
+          l = key[:keyword_length].to_i
+          v[l] = v[l] ? "#{v[l]}|#{k}" : k
+        end
+        redis.set("keyword_pattern", v)
       end
     end
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
       isutar_db.xquery('TRUNCATE star')
-      build_keyword_pattern(reset: true)
+      init_keyword_pattern
 
       content_type :json
       JSON.generate(result: 'ok')
@@ -179,9 +211,7 @@ module Isuda
         OFFSET #{per_page * (page - 1)}
       |)
 
-      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
-      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
-      # pattern = build_keyword_pattern
+      pattern = build_keyword_pattern
 
       entries.each do |entry|
         entry[:html] = htmlify(entry[:description], pattern)
@@ -260,7 +290,7 @@ module Isuda
         author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
 
-      build_keyword_pattern(reset: true)
+      reset_and_get(keyword, keyword.size)
       redirect_found '/'
     end
 
@@ -270,7 +300,6 @@ module Isuda
       entry = db.xquery(%| select keyword,description from entry where keyword = ? |, keyword).first or halt(404)
       keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
-      # entry = db.xquery(%| select * from entry where keyword = ? |, keyword).first or halt(404)
 
       pattern = build_keyword_pattern
       entry[:stars] = load_stars(entry[:keyword])
@@ -292,7 +321,7 @@ module Isuda
 
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
-      build_keyword_pattern(reset: true)
+      delete_and_reset(keyword.size)
       redirect_found '/'
     end
 
