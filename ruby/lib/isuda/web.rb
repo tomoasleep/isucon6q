@@ -70,17 +70,18 @@ module Isuda
 
       def isutar_db
         Thread.current[:isutar_db] ||=
-        begin
-          mysql = Mysql2::Client.new(
-          username: settings.db_user,
-          password: settings.db_password,
-          database: 'isutar',
-          encoding: 'utf8mb4',
-          init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
-          )
-          mysql.query_options.update(symbolize_keys: true)
-          mysql
-        end
+          begin
+            mysql = Mysql2::Client.new(
+              username: settings.db_user,
+              password: settings.db_password,
+              database: 'isutar',
+              encoding: 'utf8mb4',
+              init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
+            )
+            mysql.query_options.update(symbolize_keys: true)
+            mysql
+          end
+      end
 
       def redis
         Thread.current[:redis] ||= Redis.new
@@ -131,7 +132,7 @@ module Isuda
         kw2hash.each do |(keyword, hash)|
           escaped_keyword = Rack::Utils.escape_path(keyword)
           keyword_url = url("/keyword/#{escaped_keyword}")
-          anchor = '<a href="%s">%s</a>' % [keyword_url, escaped_keyword]
+          anchor = '<a href="%s">%s</a>' % [keyword_url, keyword]
           escaped_content.gsub!(hash, anchor)
         end
         escaped_content.gsub(/\n/, "<br />\n")
@@ -171,14 +172,13 @@ module Isuda
         if v == nil || v == ""
           init_keyword_pattern
         else
-          p v
+          v
         end
       end
 
 
       def reset_and_get(key, length)
         k = Regexp.escape(key)
-
         v = redis.get("key#{length}")
 
         if v == nil || v == ""
@@ -209,7 +209,7 @@ module Isuda
           k = Regexp.escape(key[:keyword])
           l = key[:keyword_length].to_i
           v[l] = v[l] ? "#{v[l]}|#{k}" : k
-          i = lif l > i
+          i = l if l > i
         end
 
         redis.set("key_max", i)
@@ -324,7 +324,7 @@ module Isuda
         author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
 
-      reset_and_get(keyword, keyword.size)
+      init_keyword_pattern
       redirect_found '/'
     end
 
@@ -355,7 +355,8 @@ module Isuda
 
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
-      delete_and_reset(keyword.size)
+
+      init_keyword_pattern
       redirect_found '/'
     end
 
