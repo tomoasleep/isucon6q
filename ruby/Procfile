@@ -1,3 +1,2 @@
 isuda: bundle exec unicorn isuda.ru -p 5000
-isutar: bundle exec unicorn isutar.ru -p 5001
 isupam: ../bin/isupam -p 5050
