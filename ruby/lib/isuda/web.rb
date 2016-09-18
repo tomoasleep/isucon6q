@@ -151,22 +151,6 @@ module Isuda
         redirect(path, 302)
       end
 
-      def get_keyword_pattern(reset: false)
-        v = redis.get("key_total")
-        if v == nil || v == ""
-          init_keyword_pattern
-        else
-          v
-        end
-      end
-
-      def delete_and_reset(length)
-        keywords = db.prepare(%| select keyword,keyword_length from entry where keyword_length = ? |).execute(
-          length
-        ).map {|k| Regexp.escape(k[:keyword]) }.join('|')
-        redis.set("key#{length}", keywords)
-      end
-
       def build_keyword_pattern(reset: false)
         v = redis.get("key_total")
         if v == nil || v == ""
@@ -176,48 +160,13 @@ module Isuda
         end
       end
 
-
-      def reset_and_get(key, length)
-        k = Regexp.escape(key)
-        v = redis.get("key#{length}")
-
-        if v == nil || v == ""
-          init_keyword_pattern
-        else
-          max = redis.get("key_max")
-          redis.set("key#{length}", v + "|" + key)
-          if max == nil || max == ""
-            init_keyword_pattern
-          else
-            ret = []
-            [max.to_i..0].each do |e|
-              v = redis.get("key#{e}")
-              ret << e if v != ""
-            end
-            v = ret.join("|")
-            redis.set("key_total", v)
-            v
-          end
-        end
-      end
-
       def init_keyword_pattern
         keys = db.xquery(%| select keyword,keyword_length from entry order by keyword_length desc|)
         v = {}
-        i = 0
         keys.each do |key|
           k = Regexp.escape(key[:keyword])
           l = key[:keyword_length].to_i
           v[l] = v[l] ? "#{v[l]}|#{k}" : k
-          i = l if l > i
-        end
-
-        redis.set("key_max", i)
-
-        v2 = []
-        v.each do |k, v|
-          v2 << v
-          redis.set("key#{k}", v)
         end
 
         v2 = v2.join("|")
