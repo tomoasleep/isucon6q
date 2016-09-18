@@ -9,11 +9,14 @@ require 'mysql2-cs-bind'
 require 'rack/utils'
 require 'sinatra/base'
 require 'tilt/erubis'
+require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
 
 module Isuda
   class Web < ::Sinatra::Base
     enable :protection
     enable :sessions
+
+    use Rack::Lineprof unless ENV['RACK_ENV'] == 'production'
 
     set :erb, escape_html: true
     set :public_folder, File.expand_path('../../../../public', __FILE__)
