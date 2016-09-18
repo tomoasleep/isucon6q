@@ -1,5 +1,6 @@
 #!/bin/sh
 time=`date +'%m%d_%H:%M:%S'`
+cd `dirname $0`
 
 sudo mkdir -p /home/isucon/logs/${time}/mysql
 sudo mkdir -p /home/isucon/logs/${time}/nginx
