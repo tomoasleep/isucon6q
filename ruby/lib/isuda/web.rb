@@ -153,7 +153,7 @@ module Isuda
       def build_keyword_pattern(reset: false)
         redis.set("build_keyword_pattern", nil) if reset
         cached("build_keyword_pattern") do
-          keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
+          keywords = db.xquery(%| select keyword from entry order by character_length(keyword) desc |)
           pat = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
         end
       end
@@ -162,6 +162,7 @@ module Isuda
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
       isutar_db.xquery('TRUNCATE star')
+      build_keyword_pattern(reset: true)
 
       content_type :json
       JSON.generate(result: 'ok')
