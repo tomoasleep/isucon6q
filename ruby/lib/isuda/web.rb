@@ -25,7 +25,7 @@ module Isuda
     set :dsn, ENV['ISUDA_DSN'] || 'dbi:mysql:db=isuda'
     set :session_secret, 'tonymoris'
     set :isupam_origin, ENV['ISUPAM_ORIGIN'] || 'http://localhost:5050'
-    # set :isutar_origin, ENV['ISUTAR_ORIGIN'] || 'http://localhost:5001'
+    set :isutar_origin, ENV['ISUTAR_ORIGIN'] || 'http://localhost:5001'
 
     configure :development do
       require 'sinatra/reloader'
@@ -52,28 +52,15 @@ module Isuda
     end
 
     helpers do
-      def star_db
-        Thread.current[:star_db] ||=
-          begin
-            mysql = Mysql2::Client.new(
-              username: settings.db_user,
-              password: settings.db_password,
-              database: 'isutar',
-              encoding: 'utf8mb4',
-              init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
-            )
-            mysql.query_options.update(symbolize_keys: true)
-            mysql
-          end
-      end
-
       def db
         Thread.current[:db] ||=
           begin
+            _, _, attrs_part = settings.dsn.split(':', 3)
+            attrs = Hash[attrs_part.split(';').map {|part| part.split('=', 2) }]
             mysql = Mysql2::Client.new(
               username: settings.db_user,
               password: settings.db_password,
-              database: 'isuda',
+              database: attrs['db'],
               encoding: 'utf8mb4',
               init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
             )
@@ -129,7 +116,12 @@ module Isuda
       end
 
       def load_stars(keyword)
-        star_db.xquery(%| select * from star where keyword = ? |, keyword).to_a
+        isutar_url = URI(settings.isutar_origin)
+        isutar_url.path = '/stars'
+        isutar_url.query = URI.encode_www_form(keyword: keyword)
+        body = Net::HTTP.get(isutar_url)
+        stars_res = JSON.parse(body)
+        stars_res['stars']
       end
 
       def redirect_found(path)
@@ -139,6 +131,10 @@ module Isuda
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
+      isutar_initialize_url = URI(settings.isutar_origin)
+      isutar_initialize_url.path = '/initialize'
+      Net::HTTP.get_response(isutar_initialize_url)
+
       content_type :json
       JSON.generate(result: 'ok')
     end
@@ -257,28 +253,6 @@ module Isuda
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
       redirect_found '/'
-    end
-
-    get '/stars' do
-      keyword = params[:keyword] || ''
-      stars = load_stars(keyword)
-      content_type :json
-      JSON.generate(stars: stars)
-    end
-
-    post '/stars' do
-      keyword = params[:keyword]
-
-      db.xquery(%| select * from entry where keyword = ? |, keyword).first or halt(404)
-      user_name = params[:user]
-
-      star_db.xquery(%|
-        INSERT INTO star (keyword, user_name, created_at)
-        VALUES (?, ?, NOW())
-      |, keyword, user_name)
-
-      content_type :json
-      JSON.generate(result: 'ok')
     end
   end
 end
