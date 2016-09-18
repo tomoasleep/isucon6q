@@ -1,0 +1,29 @@
+/usr/sbin/mysqld, Version: 5.7.15-0ubuntu0.16.04.1-log ((Ubuntu)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2016-09-18T07:20:58.676327Z
+# User@Host: isucon[isucon] @ localhost []  Id:     6
+# Query_time: 0.540628  Lock_time: 0.000043 Rows_sent: 7101  Rows_examined: 14202
+use isuda;
+SET timestamp=1474183258;
+select keyword from entry order by character_length(keyword) desc;
+# Time: 2016-09-18T07:20:58.680773Z
+# User@Host: isucon[isucon] @ localhost []  Id:     8
+# Query_time: 0.544696  Lock_time: 0.000033 Rows_sent: 7101  Rows_examined: 14202
+SET timestamp=1474183258;
+select keyword from entry order by character_length(keyword) desc;
+# Time: 2016-09-18T07:20:59.069060Z
+# User@Host: isucon[isucon] @ localhost []  Id:     4
+# Query_time: 0.991005  Lock_time: 0.000049 Rows_sent: 7101  Rows_examined: 14202
+SET timestamp=1474183259;
+select * from entry order by character_length(keyword) desc;
+# Time: 2016-09-18T07:20:59.069060Z
+# User@Host: isucon[isucon] @ localhost []  Id:     9
+# Query_time: 0.865145  Lock_time: 0.000036 Rows_sent: 7102  Rows_examined: 14204
+SET timestamp=1474183259;
+select * from entry order by character_length(keyword) desc;
+# Time: 2016-09-18T07:20:59.069195Z
+# User@Host: isucon[isucon] @ localhost []  Id:     7
+# Query_time: 0.885534  Lock_time: 0.000051 Rows_sent: 7102  Rows_examined: 14204
+SET timestamp=1474183259;
+select * from entry order by character_length(keyword) desc;
