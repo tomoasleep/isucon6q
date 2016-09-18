@@ -1,0 +1,14 @@
+/usr/sbin/mysqld, Version: 5.7.15-0ubuntu0.16.04.1-log ((Ubuntu)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2016-09-18T03:50:04.104310Z
+# User@Host: isucon[isucon] @ localhost []  Id:     6
+# Query_time: 0.710102  Lock_time: 0.000099 Rows_sent: 7102  Rows_examined: 14204
+use isuda;
+SET timestamp=1474170604;
+select * from entry order by character_length(keyword) desc;
+# Time: 2016-09-18T03:53:19.494931Z
+# User@Host: isucon[isucon] @ localhost []  Id:    17
+# Query_time: 3.418617  Lock_time: 0.000000 Rows_sent: 1150  Rows_examined: 1150
+SET timestamp=1474170799;
+SELECT /*!40001 SQL_NO_CACHE */ * FROM `entry`;
