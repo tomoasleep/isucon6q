@@ -1,0 +1,52 @@
+I, [2016-09-18T17:21:56.380537 #38203]  INFO -- : Refreshing Gem list
+I, [2016-09-18T17:21:56.432540 #38203]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T17:21:56.432656 #38203]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=7
+I, [2016-09-18T17:21:56.432818 #38203]  INFO -- : listening on addr=0.0.0.0:5000 fd=8
+I, [2016-09-18T17:21:56.432878 #38203]  INFO -- : worker=0 spawning...
+I, [2016-09-18T17:21:56.433737 #38203]  INFO -- : worker=1 spawning...
+I, [2016-09-18T17:21:56.434312 #38211]  INFO -- : worker=0 spawned pid=38211
+I, [2016-09-18T17:21:56.434451 #38211]  INFO -- : worker=0 ready
+I, [2016-09-18T17:21:56.434724 #38203]  INFO -- : worker=2 spawning...
+I, [2016-09-18T17:21:56.435178 #38214]  INFO -- : worker=1 spawned pid=38214
+I, [2016-09-18T17:21:56.435294 #38214]  INFO -- : worker=1 ready
+I, [2016-09-18T17:21:56.435901 #38203]  INFO -- : worker=3 spawning...
+I, [2016-09-18T17:21:56.436315 #38217]  INFO -- : worker=2 spawned pid=38217
+I, [2016-09-18T17:21:56.436421 #38203]  INFO -- : worker=4 spawning...
+I, [2016-09-18T17:21:56.436494 #38217]  INFO -- : worker=2 ready
+I, [2016-09-18T17:21:56.437191 #38203]  INFO -- : master process ready
+I, [2016-09-18T17:21:56.437638 #38223]  INFO -- : worker=4 spawned pid=38223
+I, [2016-09-18T17:21:56.437687 #38220]  INFO -- : worker=3 spawned pid=38220
+I, [2016-09-18T17:21:56.437786 #38223]  INFO -- : worker=4 ready
+I, [2016-09-18T17:21:56.437844 #38220]  INFO -- : worker=3 ready
+I, [2016-09-18T17:23:04.115126 #38203]  INFO -- : reaped #<Process::Status: pid 38211 exit 0> worker=0
+I, [2016-09-18T17:23:04.115258 #38203]  INFO -- : reaped #<Process::Status: pid 38214 exit 0> worker=1
+I, [2016-09-18T17:23:04.115300 #38203]  INFO -- : reaped #<Process::Status: pid 38217 exit 0> worker=2
+I, [2016-09-18T17:23:04.115325 #38203]  INFO -- : reaped #<Process::Status: pid 38220 exit 0> worker=3
+I, [2016-09-18T17:23:04.115350 #38203]  INFO -- : reaped #<Process::Status: pid 38223 exit 0> worker=4
+I, [2016-09-18T17:23:04.115405 #38203]  INFO -- : master complete
+I, [2016-09-18T17:23:04.412306 #39017]  INFO -- : Refreshing Gem list
+I, [2016-09-18T17:23:04.470565 #39017]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T17:23:04.470692 #39017]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=7
+I, [2016-09-18T17:23:04.470887 #39017]  INFO -- : listening on addr=0.0.0.0:5000 fd=8
+I, [2016-09-18T17:23:04.470992 #39017]  INFO -- : worker=0 spawning...
+I, [2016-09-18T17:23:04.472022 #39017]  INFO -- : worker=1 spawning...
+I, [2016-09-18T17:23:04.472433 #39020]  INFO -- : worker=0 spawned pid=39020
+I, [2016-09-18T17:23:04.472612 #39020]  INFO -- : worker=0 ready
+I, [2016-09-18T17:23:04.473842 #39023]  INFO -- : worker=1 spawned pid=39023
+I, [2016-09-18T17:23:04.473970 #39023]  INFO -- : worker=1 ready
+I, [2016-09-18T17:23:04.474293 #39017]  INFO -- : worker=2 spawning...
+I, [2016-09-18T17:23:04.474897 #39017]  INFO -- : worker=3 spawning...
+I, [2016-09-18T17:23:04.475234 #39026]  INFO -- : worker=2 spawned pid=39026
+I, [2016-09-18T17:23:04.475351 #39026]  INFO -- : worker=2 ready
+I, [2016-09-18T17:23:04.475421 #39017]  INFO -- : worker=4 spawning...
+I, [2016-09-18T17:23:04.476235 #39029]  INFO -- : worker=3 spawned pid=39029
+I, [2016-09-18T17:23:04.476294 #39017]  INFO -- : master process ready
+I, [2016-09-18T17:23:04.476342 #39029]  INFO -- : worker=3 ready
+I, [2016-09-18T17:23:04.476889 #39032]  INFO -- : worker=4 spawned pid=39032
+I, [2016-09-18T17:23:04.476997 #39032]  INFO -- : worker=4 ready
+I, [2016-09-18T17:26:39.551240 #39017]  INFO -- : reaped #<Process::Status: pid 39020 exit 0> worker=0
+I, [2016-09-18T17:26:39.551317 #39017]  INFO -- : reaped #<Process::Status: pid 39023 exit 0> worker=1
+I, [2016-09-18T17:26:39.551350 #39017]  INFO -- : reaped #<Process::Status: pid 39026 exit 0> worker=2
+I, [2016-09-18T17:26:39.551428 #39017]  INFO -- : reaped #<Process::Status: pid 39029 exit 0> worker=3
+I, [2016-09-18T17:26:39.551454 #39017]  INFO -- : reaped #<Process::Status: pid 39032 exit 0> worker=4
+I, [2016-09-18T17:26:39.551515 #39017]  INFO -- : master complete

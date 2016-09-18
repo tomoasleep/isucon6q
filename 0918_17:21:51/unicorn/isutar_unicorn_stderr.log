@@ -122,3 +122,9 @@ I, [2016-09-18T17:15:44.832068 #37896]  INFO -- : master process ready
 I, [2016-09-18T17:15:44.832213 #37923]  INFO -- : worker=3 ready
 I, [2016-09-18T17:15:44.832434 #37927]  INFO -- : worker=4 spawned pid=37927
 I, [2016-09-18T17:15:44.832541 #37927]  INFO -- : worker=4 ready
+I, [2016-09-18T17:22:05.319029 #37896]  INFO -- : reaped #<Process::Status: pid 37915 exit 0> worker=0
+I, [2016-09-18T17:22:05.319123 #37896]  INFO -- : reaped #<Process::Status: pid 37918 exit 0> worker=1
+I, [2016-09-18T17:22:05.319153 #37896]  INFO -- : reaped #<Process::Status: pid 37921 exit 0> worker=2
+I, [2016-09-18T17:22:05.319189 #37896]  INFO -- : reaped #<Process::Status: pid 37923 exit 0> worker=3
+I, [2016-09-18T17:22:05.319213 #37896]  INFO -- : reaped #<Process::Status: pid 37927 exit 0> worker=4
+I, [2016-09-18T17:22:05.319263 #37896]  INFO -- : master complete
