@@ -52,15 +52,28 @@ module Isuda
     end
 
     helpers do
-      def db
-        Thread.current[:db] ||=
+      def star_db
+        Thread.current[:star_db] ||=
           begin
-            _, _, attrs_part = settings.dsn.split(':', 3)
-            attrs = Hash[attrs_part.split(';').map {|part| part.split('=', 2) }]
             mysql = Mysql2::Client.new(
               username: settings.db_user,
               password: settings.db_password,
-              database: attrs['db'],
+              database: 'isutar',
+              encoding: 'utf8mb4',
+              init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
+            )
+            mysql.query_options.update(symbolize_keys: true)
+            mysql
+          end
+      end
+
+      def db
+        Thread.current[:db] ||=
+          begin
+            mysql = Mysql2::Client.new(
+              username: settings.db_user,
+              password: settings.db_password,
+              database: 'isuda',
               encoding: 'utf8mb4',
               init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
             )
@@ -114,12 +127,7 @@ module Isuda
       end
 
       def load_stars(keyword)
-        isutar_url = URI(settings.isutar_origin)
-        isutar_url.path = '/stars'
-        isutar_url.query = URI.encode_www_form(keyword: keyword)
-        body = Net::HTTP.get(isutar_url)
-        stars_res = JSON.parse(body)
-        stars_res['stars']
+        star_db.xquery(%| select * from star where keyword = ? |, keyword || '').to_a
       end
 
       def redirect_found(path)
@@ -129,9 +137,7 @@ module Isuda
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
-      isutar_initialize_url = URI(settings.isutar_origin)
-      isutar_initialize_url.path = '/initialize'
-      Net::HTTP.get_response(isutar_initialize_url)
+      star_db.xquery('TRUNCATE star')
 
       content_type :json
       JSON.generate(result: 'ok')
