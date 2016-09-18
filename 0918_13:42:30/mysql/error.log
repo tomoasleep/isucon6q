@@ -1,0 +1,147 @@
+2016-09-18T04:19:59.290094Z 0 [Warning] Changed limits: max_open_files: 1024 (requested 5000)
+2016-09-18T04:19:59.290129Z 0 [Warning] Changed limits: table_open_cache: 431 (requested 2000)
+2016-09-18T04:19:59.442572Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-09-18T04:19:59.443577Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.15-0ubuntu0.16.04.1-log) starting as process 13822 ...
+2016-09-18T04:19:59.446900Z 0 [Note] InnoDB: PUNCH HOLE support available
+2016-09-18T04:19:59.446917Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-09-18T04:19:59.446921Z 0 [Note] InnoDB: Uses event mutexes
+2016-09-18T04:19:59.446924Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-09-18T04:19:59.446927Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2016-09-18T04:19:59.446930Z 0 [Note] InnoDB: Using Linux native AIO
+2016-09-18T04:19:59.447150Z 0 [Note] InnoDB: Number of pools: 1
+2016-09-18T04:19:59.447250Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-09-18T04:19:59.452566Z 0 [Note] InnoDB: Initializing buffer pool, total size = 3G, instances = 8, chunk size = 128M
+2016-09-18T04:19:59.616125Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-09-18T04:19:59.637043Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2016-09-18T04:19:59.655491Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2016-09-18T04:19:59.865220Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2016-09-18T04:19:59.865286Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2016-09-18T04:20:00.965458Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2016-09-18T04:20:00.966124Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2016-09-18T04:20:00.966132Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2016-09-18T04:20:00.966474Z 0 [Note] InnoDB: Waiting for purge to start
+2016-09-18T04:20:01.016935Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 33246268
+2016-09-18T04:20:01.017191Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2016-09-18T04:20:01.017209Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2016-09-18T04:20:01.022324Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2016-09-18T04:20:01.022337Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2016-09-18T04:20:01.022350Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2016-09-18T04:20:01.022371Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2016-09-18T04:20:01.039902Z 0 [Note] Event Scheduler: Loaded 0 events
+2016-09-18T04:20:01.040090Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.15-0ubuntu0.16.04.1-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+2016-09-18T04:20:01.294671Z 2 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T04:20:01.394562Z 0 [Note] InnoDB: Buffer pool(s) load completed at 160918 13:20:01
+2016-09-18T04:30:24.949175Z 4 [Note] Aborted connection 4 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.949255Z 11 [Note] Aborted connection 11 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.952148Z 12 [Note] Aborted connection 12 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.952205Z 8 [Note] Aborted connection 8 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.954924Z 9 [Note] Aborted connection 9 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.955110Z 7 [Note] Aborted connection 7 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.955166Z 10 [Note] Aborted connection 10 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.958354Z 5 [Note] Aborted connection 5 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.959548Z 13 [Note] Aborted connection 13 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:24.959663Z 6 [Note] Aborted connection 6 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:25.074998Z 18 [Note] Aborted connection 18 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:25.075737Z 19 [Note] Aborted connection 19 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:25.075742Z 16 [Note] Aborted connection 16 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:25.076586Z 17 [Note] Aborted connection 17 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:30:25.077770Z 20 [Note] Aborted connection 20 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.170120Z 28 [Note] Aborted connection 28 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.170409Z 29 [Note] Aborted connection 29 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.173438Z 22 [Note] Aborted connection 22 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.173501Z 21 [Note] Aborted connection 21 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.175725Z 30 [Note] Aborted connection 30 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.175809Z 27 [Note] Aborted connection 27 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.176931Z 32 [Note] Aborted connection 32 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.176987Z 25 [Note] Aborted connection 25 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.177967Z 26 [Note] Aborted connection 26 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.177976Z 31 [Note] Aborted connection 31 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.300810Z 24 [Note] Aborted connection 24 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.300930Z 34 [Note] Aborted connection 34 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.303849Z 33 [Note] Aborted connection 33 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.304743Z 23 [Note] Aborted connection 23 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:35:58.304984Z 35 [Note] Aborted connection 35 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.156359Z 44 [Note] Aborted connection 44 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.156455Z 40 [Note] Aborted connection 40 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158081Z 41 [Note] Aborted connection 41 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158096Z 42 [Note] Aborted connection 42 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158151Z 39 [Note] Aborted connection 39 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158188Z 38 [Note] Aborted connection 38 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158224Z 43 [Note] Aborted connection 43 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158083Z 45 [Note] Aborted connection 45 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158626Z 36 [Note] Aborted connection 36 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.158656Z 37 [Note] Aborted connection 37 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.273420Z 47 [Note] Aborted connection 47 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.274275Z 46 [Note] Aborted connection 46 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.274762Z 48 [Note] Aborted connection 48 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.275129Z 50 [Note] Aborted connection 50 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:38:07.275192Z 49 [Note] Aborted connection 49 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.494348Z 54 [Note] Aborted connection 54 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.502031Z 55 [Note] Aborted connection 55 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.503313Z 53 [Note] Aborted connection 53 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.503643Z 56 [Note] Aborted connection 56 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.504399Z 51 [Note] Aborted connection 51 to db: 'isuda' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.621484Z 60 [Note] Aborted connection 60 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.621645Z 58 [Note] Aborted connection 58 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.623404Z 52 [Note] Aborted connection 52 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.624473Z 57 [Note] Aborted connection 57 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:41:29.625611Z 59 [Note] Aborted connection 59 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T04:42:30.837949Z 0 [Note] Giving 2 client threads a chance to die gracefully
+2016-09-18T04:42:30.837971Z 0 [Note] Shutting down slave threads
+2016-09-18T04:42:32.838067Z 0 [Note] Forcefully disconnecting 1 remaining clients
+2016-09-18T04:42:32.838098Z 0 [Warning] /usr/sbin/mysqld: Forcing close of thread 15  user: 'isucon'
+
+2016-09-18T04:42:32.838129Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2016-09-18T04:42:32.838322Z 0 [Note] Binlog end
+2016-09-18T04:42:32.838795Z 0 [Note] Shutting down plugin 'ngram'
+2016-09-18T04:42:32.838802Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2016-09-18T04:42:32.838816Z 0 [Note] Shutting down plugin 'partition'
+2016-09-18T04:42:32.838819Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2016-09-18T04:42:32.838822Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2016-09-18T04:42:32.838825Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2016-09-18T04:42:32.838827Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2016-09-18T04:42:32.838829Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2016-09-18T04:42:32.838831Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2016-09-18T04:42:32.838833Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2016-09-18T04:42:32.838835Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2016-09-18T04:42:32.838837Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2016-09-18T04:42:32.838839Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2016-09-18T04:42:32.838841Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2016-09-18T04:42:32.838843Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2016-09-18T04:42:32.838845Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2016-09-18T04:42:32.838847Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2016-09-18T04:42:32.838849Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2016-09-18T04:42:32.838852Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2016-09-18T04:42:32.838854Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2016-09-18T04:42:32.838856Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2016-09-18T04:42:32.838858Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2016-09-18T04:42:32.838860Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2016-09-18T04:42:32.838862Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2016-09-18T04:42:32.838864Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2016-09-18T04:42:32.838866Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2016-09-18T04:42:32.838868Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2016-09-18T04:42:32.838870Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2016-09-18T04:42:32.838872Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2016-09-18T04:42:32.838874Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2016-09-18T04:42:32.838876Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2016-09-18T04:42:32.838878Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2016-09-18T04:42:32.838880Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2016-09-18T04:42:32.838882Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2016-09-18T04:42:32.838884Z 0 [Note] Shutting down plugin 'InnoDB'
+2016-09-18T04:42:32.838926Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2016-09-18T04:42:32.839002Z 0 [Note] InnoDB: Starting shutdown...
+2016-09-18T04:42:32.939218Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2016-09-18T04:42:32.939624Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 160918 13:42:32
+2016-09-18T04:42:34.285740Z 0 [Note] InnoDB: Shutdown completed; log sequence number 33551295
+2016-09-18T04:42:34.285824Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2016-09-18T04:42:34.285832Z 0 [Note] Shutting down plugin 'MEMORY'
+2016-09-18T04:42:34.285837Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2016-09-18T04:42:34.285858Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2016-09-18T04:42:34.285862Z 0 [Note] Shutting down plugin 'MyISAM'
+2016-09-18T04:42:34.285868Z 0 [Note] Shutting down plugin 'CSV'
+2016-09-18T04:42:34.285871Z 0 [Note] Shutting down plugin 'sha256_password'
+2016-09-18T04:42:34.285874Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2016-09-18T04:42:34.285998Z 0 [Note] Shutting down plugin 'binlog'
+2016-09-18T04:42:34.286352Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
