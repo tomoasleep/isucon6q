@@ -3,6 +3,7 @@ require 'json'
 require 'net/http'
 require 'uri'
 
+require 'redis'
 require 'erubis'
 require 'mysql2'
 require 'mysql2-cs-bind'
@@ -52,6 +53,10 @@ module Isuda
     end
 
     helpers do
+      def redis
+        Thread.current[:redis] ||= Redis.new
+      end
+
       def db
         Thread.current[:db] ||=
           begin
@@ -134,10 +139,22 @@ module Isuda
       def redirect_found(path)
         redirect(path, 302)
       end
+
+      def calc_pattern
+        return redis.get('isucon6q:pattern') if redis.exists('isucon6q:pattern')
+        keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
+        pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+        redis.set('isucon6q:pattern', pattern)
+      end
+
+      def reset_pattern
+        redis.del('isucon6q:pattern')
+      end
     end
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
+      reset_pattern
       isutar_db.xquery('TRUNCATE star')
 
       content_type :json
@@ -155,8 +172,7 @@ module Isuda
         OFFSET #{per_page * (page - 1)}
       |)
 
-      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
-      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      pattern = calc_pattern
 
       entries.each do |entry|
         entry[:html] = htmlify(entry[:description], pattern)
@@ -234,6 +250,7 @@ module Isuda
         ON DUPLICATE KEY UPDATE
         author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
+      reset_pattern
 
       redirect_found '/'
     end
@@ -242,8 +259,7 @@ module Isuda
       keyword = params[:keyword] or halt(400)
 
       entry = db.xquery(%| select keyword,description from entry where keyword = ? |, keyword).first or halt(404)
-      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
-      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      pattern = calc_pattern
 
       entry[:stars] = load_stars(entry[:keyword])
       entry[:html] = htmlify(entry[:description], pattern)
@@ -263,6 +279,7 @@ module Isuda
       end
 
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
+      reset_pattern
 
       redirect_found '/'
     end
