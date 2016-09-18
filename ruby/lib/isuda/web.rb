@@ -10,6 +10,7 @@ require 'rack/utils'
 require 'sinatra/base'
 require 'tilt/erubis'
 require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
+require "redis"
 
 module Isuda
   class Web < ::Sinatra::Base
@@ -69,16 +70,30 @@ module Isuda
 
       def isutar_db
         Thread.current[:isutar_db] ||=
-        begin
-          mysql = Mysql2::Client.new(
-          username: settings.db_user,
-          password: settings.db_password,
-          database: 'isutar',
-          encoding: 'utf8mb4',
-          init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
-          )
-          mysql.query_options.update(symbolize_keys: true)
-          mysql
+          begin
+            mysql = Mysql2::Client.new(
+              username: settings.db_user,
+              password: settings.db_password,
+              database: 'isutar',
+              encoding: 'utf8mb4',
+              init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
+            )
+            mysql.query_options.update(symbolize_keys: true)
+            mysql
+          end
+      end
+
+      def redis
+        Thread.current[:redis] ||= Redis.new
+      end
+
+      def cached(key, &block)
+        if v = redis.get(key)
+          v
+        else
+          new_v = yield
+          redis.set(key, new_v)
+          new_v
         end
       end
 
@@ -115,8 +130,9 @@ module Isuda
         }
         escaped_content = Rack::Utils.escape_html(hashed_content)
         kw2hash.each do |(keyword, hash)|
-          keyword_url = url("/keyword/#{Rack::Utils.escape_path(keyword)}")
-          anchor = '<a href="%s">%s</a>' % [keyword_url, Rack::Utils.escape_html(keyword)]
+          escaped_keyword = Rack::Utils.escape_path(keyword)
+          keyword_url = url("/keyword/#{escaped_keyword}")
+          anchor = '<a href="%s">%s</a>' % [keyword_url, keyword]
           escaped_content.gsub!(hash, anchor)
         end
         escaped_content.gsub(/\n/, "<br />\n")
@@ -134,11 +150,40 @@ module Isuda
       def redirect_found(path)
         redirect(path, 302)
       end
+
+      def build_keyword_pattern(reset: false)
+        v = redis.get("key_total")
+        if v == nil || v == ""
+          init_keyword_pattern
+        else
+          v
+        end
+      end
+
+      def init_keyword_pattern
+        keys = db.xquery(%| select keyword,keyword_length from entry order by keyword_length desc|)
+        v = {}
+        keys.each do |key|
+          k = Regexp.escape(key[:keyword])
+          l = key[:keyword_length].to_i
+          v[l] = v[l] ? "#{v[l]}|#{k}" : k
+        end
+
+        v2 = []
+        v.each do |k, v|
+          v2 << v
+        end
+
+        v2 = v2.join("|")
+        redis.set("key_total", v2)
+        v2
+      end
     end
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
       isutar_db.xquery('TRUNCATE star')
+      init_keyword_pattern
 
       content_type :json
       JSON.generate(result: 'ok')
@@ -155,9 +200,7 @@ module Isuda
         OFFSET #{per_page * (page - 1)}
       |)
 
-      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
-      pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
-
+      pattern = build_keyword_pattern
       entries.each do |entry|
         entry[:html] = htmlify(entry[:description], pattern)
         entry[:stars] = load_stars(entry[:keyword])
@@ -235,6 +278,7 @@ module Isuda
         author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
 
+      init_keyword_pattern
       redirect_found '/'
     end
 
@@ -245,6 +289,7 @@ module Isuda
       keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
 
+      pattern = build_keyword_pattern
       entry[:stars] = load_stars(entry[:keyword])
       entry[:html] = htmlify(entry[:description], pattern)
 
@@ -264,6 +309,8 @@ module Isuda
 
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
+
+      init_keyword_pattern
       redirect_found '/'
     end
 
