@@ -200,7 +200,7 @@ module Isuda
 
     post '/login' do
       name = params[:name]
-      user = db.xquery(%| select id,salt,password from user where name = ? |, name).first
+      user = db.xquery(%| select id,salt,password from user where name = ? LIMIT 1 |, name).first
       halt(403) unless user
       halt(403) unless user[:password] == encode_with_salt(password: params[:password], salt: user[:salt])
 
