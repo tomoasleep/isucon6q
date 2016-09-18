@@ -10,6 +10,7 @@ require 'rack/utils'
 require 'sinatra/base'
 require 'tilt/erubis'
 require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
+require "redis"
 
 module Isuda
   class Web < ::Sinatra::Base
@@ -80,6 +81,19 @@ module Isuda
           mysql.query_options.update(symbolize_keys: true)
           mysql
         end
+
+      def redis
+        Thread.current[:redis] ||= Redis.new
+      end
+
+      def cached(key, &block)
+        if v = redis.get(key)
+          v
+        else
+          new_v = yield
+          redis.set(key, new_v)
+          new_v
+        end
       end
 
       def register(name, pw)
@@ -115,8 +129,9 @@ module Isuda
         }
         escaped_content = Rack::Utils.escape_html(hashed_content)
         kw2hash.each do |(keyword, hash)|
-          keyword_url = url("/keyword/#{Rack::Utils.escape_path(keyword)}")
-          anchor = '<a href="%s">%s</a>' % [keyword_url, Rack::Utils.escape_html(keyword)]
+          escaped_keyword = Rack::Utils.escape_path(keyword)
+          keyword_url = url("/keyword/#{escaped_keyword}")
+          anchor = '<a href="%s">%s</a>' % [keyword_url, escaped_keyword]
           escaped_content.gsub!(hash, anchor)
         end
         escaped_content.gsub(/\n/, "<br />\n")
@@ -133,6 +148,14 @@ module Isuda
 
       def redirect_found(path)
         redirect(path, 302)
+      end
+
+      def build_keyword_pattern(reset: false)
+        redis.set("build_keyword_pattern", nil) if reset
+        cached("build_keyword_pattern") do
+          keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
+          pat = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+        end
       end
     end
 
@@ -157,6 +180,7 @@ module Isuda
 
       keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      # pattern = build_keyword_pattern
 
       entries.each do |entry|
         entry[:html] = htmlify(entry[:description], pattern)
@@ -235,6 +259,7 @@ module Isuda
         author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
 
+      build_keyword_pattern(reset: true)
       redirect_found '/'
     end
 
@@ -244,7 +269,9 @@ module Isuda
       entry = db.xquery(%| select keyword,description from entry where keyword = ? |, keyword).first or halt(404)
       keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
+      # entry = db.xquery(%| select * from entry where keyword = ? |, keyword).first or halt(404)
 
+      pattern = build_keyword_pattern
       entry[:stars] = load_stars(entry[:keyword])
       entry[:html] = htmlify(entry[:description], pattern)
 
@@ -264,6 +291,7 @@ module Isuda
 
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
+      build_keyword_pattern(reset: true)
       redirect_found '/'
     end
 
