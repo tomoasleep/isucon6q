@@ -6,11 +6,13 @@ require 'mysql2'
 require 'mysql2-cs-bind'
 require 'rack/utils'
 require 'sinatra/base'
+require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
 
 module Isutar
   class Web < ::Sinatra::Base
     enable :protection
 
+    use Rack::Lineprof unless ENV['RACK_ENV'] == 'production'
     set :db_user, ENV['ISUTAR_DB_USER'] || 'root'
     set :db_password, ENV['ISUTAR_DB_PASSWORD'] || ''
     set :dsn, ENV['ISUTAR_DSN'] || 'dbi:mysql:db=isutar'
