@@ -8,6 +8,7 @@ require 'mysql2'
 require 'mysql2-cs-bind'
 require 'rack/utils'
 require 'sinatra/base'
+require 'sinatra/json'
 require 'tilt/erubis'
 require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
 
@@ -135,8 +136,7 @@ module Isuda
       isutar_initialize_url.path = '/initialize'
       Net::HTTP.get_response(isutar_initialize_url)
 
-      content_type :json
-      JSON.generate(result: 'ok')
+      json(result: 'ok')
     end
 
     get '/', set_name: true do
