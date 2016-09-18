@@ -18,7 +18,6 @@ done
 sudo systemctl restart nginx.service
 sudo systemctl restart mysql.service
 sudo systemctl restart isuda.ruby.service
-sudo systemctl restart isutar.ruby.service
 
 git add .
 git commit -m "${time}"
