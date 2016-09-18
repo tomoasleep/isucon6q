@@ -138,9 +138,7 @@ module Isuda
 
     get '/initialize' do
       db.xquery(%| DELETE FROM entry WHERE id > 7101 |)
-      isutar_initialize_url = URI(settings.isutar_origin)
-      isutar_initialize_url.path = '/initialize'
-      Net::HTTP.get_response(isutar_initialize_url)
+      isutar_db.xquery('TRUNCATE star')
 
       content_type :json
       JSON.generate(result: 'ok')
@@ -267,6 +265,28 @@ module Isuda
       db.xquery(%| DELETE FROM entry WHERE keyword = ? |, keyword)
 
       redirect_found '/'
+    end
+
+    get '/stars' do
+      keyword = params[:keyword] || ''
+      stars = isutar_db.xquery(%| select * from star where keyword = ? |, keyword).to_a
+
+      content_type :json
+      JSON.generate(stars: stars)
+    end
+
+    post '/stars' do
+      keyword = params[:keyword] or halt(404)
+      db.xquery(%| select keyword from entry where keyword = ? |, keyword).first or halt(404)
+
+      user_name = params[:user]
+      isutar_db.xquery(%|
+        INSERT INTO star (keyword, user_name, created_at)
+        VALUES (?, ?, NOW())
+      |, keyword, user_name)
+
+      content_type :json
+      JSON.generate(result: 'ok')
     end
   end
 end
