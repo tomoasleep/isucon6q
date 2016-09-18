@@ -1,0 +1,289 @@
+2016-09-18T01:09:41.687396Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-09-18T01:09:42.185813Z 0 [Warning] InnoDB: New log files created, LSN=45790
+2016-09-18T01:09:42.438471Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+2016-09-18T01:09:43.088821Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 94e472cf-7d3c-11e6-b568-000d3a50c8db.
+2016-09-18T01:09:43.112847Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2016-09-18T01:09:43.113146Z 1 [Warning] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2016-09-18T01:10:03.358900Z 0 [Warning] Changed limits: max_open_files: 1024 (requested 5000)
+2016-09-18T01:10:03.358940Z 0 [Warning] Changed limits: table_open_cache: 431 (requested 2000)
+2016-09-18T01:10:03.514465Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-09-18T01:10:03.516148Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.15-0ubuntu0.16.04.1) starting as process 23680 ...
+2016-09-18T01:10:03.520312Z 0 [Note] InnoDB: PUNCH HOLE support available
+2016-09-18T01:10:03.520331Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-09-18T01:10:03.520335Z 0 [Note] InnoDB: Uses event mutexes
+2016-09-18T01:10:03.520340Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-09-18T01:10:03.520343Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2016-09-18T01:10:03.520346Z 0 [Note] InnoDB: Using Linux native AIO
+2016-09-18T01:10:03.520625Z 0 [Note] InnoDB: Number of pools: 1
+2016-09-18T01:10:03.520728Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-09-18T01:10:03.522423Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2016-09-18T01:10:03.532669Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-09-18T01:10:03.535335Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2016-09-18T01:10:03.547586Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2016-09-18T01:10:03.597162Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2016-09-18T01:10:03.597206Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2016-09-18T01:10:04.004942Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2016-09-18T01:10:04.005565Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2016-09-18T01:10:04.005573Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2016-09-18T01:10:04.006232Z 0 [Note] InnoDB: Waiting for purge to start
+2016-09-18T01:10:04.056356Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2529362
+2016-09-18T01:10:04.056514Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:10:04.056580Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2016-09-18T01:10:04.057732Z 0 [Note] InnoDB: Buffer pool(s) load completed at 160918 10:10:04
+2016-09-18T01:10:04.060171Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2016-09-18T01:10:04.060182Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2016-09-18T01:10:04.060194Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2016-09-18T01:10:04.060218Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2016-09-18T01:10:04.066744Z 0 [Note] Event Scheduler: Loaded 0 events
+2016-09-18T01:10:04.067275Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.15-0ubuntu0.16.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+2016-09-18T01:10:04.369529Z 2 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T01:10:04.390790Z 3 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T01:10:11.302729Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2016-09-18T01:10:11.302747Z 0 [Note] Shutting down slave threads
+2016-09-18T01:10:11.302750Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2016-09-18T01:10:11.302755Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2016-09-18T01:10:11.302809Z 0 [Note] Binlog end
+2016-09-18T01:10:11.303305Z 0 [Note] Shutting down plugin 'ngram'
+2016-09-18T01:10:11.303311Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2016-09-18T01:10:11.303314Z 0 [Note] Shutting down plugin 'partition'
+2016-09-18T01:10:11.303316Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2016-09-18T01:10:11.303319Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2016-09-18T01:10:11.303322Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2016-09-18T01:10:11.303324Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2016-09-18T01:10:11.303327Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2016-09-18T01:10:11.303329Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2016-09-18T01:10:11.303331Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2016-09-18T01:10:11.303359Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2016-09-18T01:10:11.303361Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2016-09-18T01:10:11.303363Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2016-09-18T01:10:11.303365Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2016-09-18T01:10:11.303367Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2016-09-18T01:10:11.303370Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2016-09-18T01:10:11.303372Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2016-09-18T01:10:11.303374Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2016-09-18T01:10:11.303376Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2016-09-18T01:10:11.303378Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2016-09-18T01:10:11.303380Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2016-09-18T01:10:11.303382Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2016-09-18T01:10:11.303384Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2016-09-18T01:10:11.303386Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2016-09-18T01:10:11.303389Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2016-09-18T01:10:11.303391Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2016-09-18T01:10:11.303393Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2016-09-18T01:10:11.303395Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2016-09-18T01:10:11.303397Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2016-09-18T01:10:11.303399Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2016-09-18T01:10:11.303401Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2016-09-18T01:10:11.303403Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2016-09-18T01:10:11.303405Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2016-09-18T01:10:11.303407Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2016-09-18T01:10:11.303409Z 0 [Note] Shutting down plugin 'InnoDB'
+2016-09-18T01:10:11.304909Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2016-09-18T01:10:11.305055Z 0 [Note] InnoDB: Starting shutdown...
+2016-09-18T01:10:11.405191Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:10:11.405316Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 160918 10:10:11
+2016-09-18T01:10:12.644067Z 0 [Note] InnoDB: Shutdown completed; log sequence number 2529390
+2016-09-18T01:10:12.645616Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2016-09-18T01:10:12.645626Z 0 [Note] Shutting down plugin 'MEMORY'
+2016-09-18T01:10:12.645630Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2016-09-18T01:10:12.645651Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2016-09-18T01:10:12.645655Z 0 [Note] Shutting down plugin 'MyISAM'
+2016-09-18T01:10:12.645661Z 0 [Note] Shutting down plugin 'CSV'
+2016-09-18T01:10:12.645672Z 0 [Note] Shutting down plugin 'sha256_password'
+2016-09-18T01:10:12.645674Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2016-09-18T01:10:12.645804Z 0 [Note] Shutting down plugin 'binlog'
+2016-09-18T01:10:12.646053Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2016-09-18T01:10:12.722772Z 0 [Warning] Changed limits: max_open_files: 1024 (requested 5000)
+2016-09-18T01:10:12.722810Z 0 [Warning] Changed limits: table_open_cache: 431 (requested 2000)
+2016-09-18T01:10:12.878457Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-09-18T01:10:12.879947Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.15-0ubuntu0.16.04.1) starting as process 23937 ...
+2016-09-18T01:10:12.882967Z 0 [Note] InnoDB: PUNCH HOLE support available
+2016-09-18T01:10:12.882984Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-09-18T01:10:12.882988Z 0 [Note] InnoDB: Uses event mutexes
+2016-09-18T01:10:12.882991Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-09-18T01:10:12.882995Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2016-09-18T01:10:12.882998Z 0 [Note] InnoDB: Using Linux native AIO
+2016-09-18T01:10:12.883249Z 0 [Note] InnoDB: Number of pools: 1
+2016-09-18T01:10:12.883368Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-09-18T01:10:12.884833Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2016-09-18T01:10:12.892373Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-09-18T01:10:12.894209Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2016-09-18T01:10:12.906287Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2016-09-18T01:10:12.926384Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2016-09-18T01:10:12.926432Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2016-09-18T01:10:13.057880Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2016-09-18T01:10:13.058569Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2016-09-18T01:10:13.058578Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2016-09-18T01:10:13.059328Z 0 [Note] InnoDB: Waiting for purge to start
+2016-09-18T01:10:13.109462Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 2529390
+2016-09-18T01:10:13.110195Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:10:13.110309Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2016-09-18T01:10:13.112105Z 0 [Note] InnoDB: Buffer pool(s) load completed at 160918 10:10:13
+2016-09-18T01:10:13.113983Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2016-09-18T01:10:13.114002Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2016-09-18T01:10:13.114014Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2016-09-18T01:10:13.114041Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2016-09-18T01:10:13.119464Z 0 [Note] Event Scheduler: Loaded 0 events
+2016-09-18T01:10:13.119736Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.15-0ubuntu0.16.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+2016-09-18T01:10:13.729365Z 2 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T01:10:46.892977Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2016-09-18T01:10:46.893018Z 0 [Note] Shutting down slave threads
+2016-09-18T01:10:46.893023Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2016-09-18T01:10:46.893028Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2016-09-18T01:10:46.894341Z 0 [Note] Binlog end
+2016-09-18T01:10:46.894631Z 0 [Note] Shutting down plugin 'ngram'
+2016-09-18T01:10:46.894638Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2016-09-18T01:10:46.894641Z 0 [Note] Shutting down plugin 'partition'
+2016-09-18T01:10:46.894651Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2016-09-18T01:10:46.894654Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2016-09-18T01:10:46.894657Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2016-09-18T01:10:46.894659Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2016-09-18T01:10:46.894661Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2016-09-18T01:10:46.894663Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2016-09-18T01:10:46.894666Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2016-09-18T01:10:46.894668Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2016-09-18T01:10:46.894670Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2016-09-18T01:10:46.894672Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2016-09-18T01:10:46.894674Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2016-09-18T01:10:46.894676Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2016-09-18T01:10:46.894678Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2016-09-18T01:10:46.894680Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2016-09-18T01:10:46.894682Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2016-09-18T01:10:46.894684Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2016-09-18T01:10:46.894686Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2016-09-18T01:10:46.894689Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2016-09-18T01:10:46.894691Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2016-09-18T01:10:46.894693Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2016-09-18T01:10:46.894695Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2016-09-18T01:10:46.894697Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2016-09-18T01:10:46.894699Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2016-09-18T01:10:46.894701Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2016-09-18T01:10:46.894703Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2016-09-18T01:10:46.894705Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2016-09-18T01:10:46.894708Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2016-09-18T01:10:46.894710Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2016-09-18T01:10:46.894712Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2016-09-18T01:10:46.894714Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2016-09-18T01:10:46.894716Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2016-09-18T01:10:46.894718Z 0 [Note] Shutting down plugin 'InnoDB'
+2016-09-18T01:10:46.894754Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2016-09-18T01:10:46.894964Z 0 [Note] InnoDB: Starting shutdown...
+2016-09-18T01:10:46.999095Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:10:46.999356Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 160918 10:10:46
+2016-09-18T01:10:51.852827Z 0 [Note] InnoDB: Shutdown completed; log sequence number 32495878
+2016-09-18T01:10:51.855581Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2016-09-18T01:10:51.855597Z 0 [Note] Shutting down plugin 'MEMORY'
+2016-09-18T01:10:51.855601Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2016-09-18T01:10:51.855624Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2016-09-18T01:10:51.855695Z 0 [Note] Shutting down plugin 'MyISAM'
+2016-09-18T01:10:51.855702Z 0 [Note] Shutting down plugin 'CSV'
+2016-09-18T01:10:51.855706Z 0 [Note] Shutting down plugin 'sha256_password'
+2016-09-18T01:10:51.855709Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2016-09-18T01:10:51.855834Z 0 [Note] Shutting down plugin 'binlog'
+2016-09-18T01:10:51.856055Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2016-09-18T01:11:16.068599Z 0 [Warning] Changed limits: max_open_files: 1024 (requested 5000)
+2016-09-18T01:11:16.068776Z 0 [Warning] Changed limits: table_open_cache: 431 (requested 2000)
+2016-09-18T01:11:16.532476Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-09-18T01:11:16.571867Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.15-0ubuntu0.16.04.1) starting as process 1134 ...
+2016-09-18T01:11:16.811089Z 0 [Note] InnoDB: PUNCH HOLE support available
+2016-09-18T01:11:16.811133Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-09-18T01:11:16.811137Z 0 [Note] InnoDB: Uses event mutexes
+2016-09-18T01:11:16.811141Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-09-18T01:11:16.811163Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2016-09-18T01:11:16.811168Z 0 [Note] InnoDB: Using Linux native AIO
+2016-09-18T01:11:16.842168Z 0 [Note] InnoDB: Number of pools: 1
+2016-09-18T01:11:16.878491Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-09-18T01:11:16.900157Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2016-09-18T01:11:17.021787Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-09-18T01:11:17.059658Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2016-09-18T01:11:17.123943Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2016-09-18T01:11:17.487479Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2016-09-18T01:11:17.487539Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2016-09-18T01:11:17.534397Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2016-09-18T01:11:17.535055Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2016-09-18T01:11:17.535064Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2016-09-18T01:11:17.535676Z 0 [Note] InnoDB: Waiting for purge to start
+2016-09-18T01:11:17.585823Z 0 [Note] InnoDB: 5.7.15 started; log sequence number 32495878
+2016-09-18T01:11:17.586418Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2016-09-18T01:11:17.586554Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:11:17.684989Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2016-09-18T01:11:17.685011Z 0 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2016-09-18T01:11:17.685022Z 0 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2016-09-18T01:11:17.685051Z 0 [Note] Server socket created on IP: '127.0.0.1'.
+2016-09-18T01:11:17.813031Z 0 [Note] Event Scheduler: Loaded 0 events
+2016-09-18T01:11:17.813274Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.15-0ubuntu0.16.04.1'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  (Ubuntu)
+2016-09-18T01:11:17.937281Z 0 [Note] InnoDB: Buffer pool(s) load completed at 160918 10:11:17
+2016-09-18T01:11:18.617110Z 2 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T01:20:29.007715Z 10 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:21:58.513836Z 11 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:21:58.574194Z 12 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:21:58.880902Z 13 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:21:59.054143Z 14 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:21:59.221555Z 15 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:23:29.859656Z 19 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2016-09-18T01:24:00.598197Z 20 [Note] Access denied for user 'root'@'localhost' (using password: YES)
+2016-09-18T01:24:16.630302Z 8 [Note] Aborted connection 8 to db: 'isutar' user: 'isucon' host: 'localhost' (Got an error reading communication packets)
+2016-09-18T01:24:38.367532Z 21 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:24:38.574533Z 22 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:24:41.205027Z 23 [Note] Access denied for user 'isucon'@'localhost' (using password: NO)
+2016-09-18T01:27:27.152136Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2016-09-18T01:27:27.152155Z 0 [Note] Shutting down slave threads
+2016-09-18T01:27:27.152159Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2016-09-18T01:27:27.152165Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2016-09-18T01:27:27.152191Z 0 [Note] Binlog end
+2016-09-18T01:27:27.153207Z 0 [Note] Shutting down plugin 'ngram'
+2016-09-18T01:27:27.153214Z 0 [Note] Shutting down plugin 'ARCHIVE'
+2016-09-18T01:27:27.153218Z 0 [Note] Shutting down plugin 'partition'
+2016-09-18T01:27:27.153220Z 0 [Note] Shutting down plugin 'BLACKHOLE'
+2016-09-18T01:27:27.153224Z 0 [Note] Shutting down plugin 'INNODB_SYS_VIRTUAL'
+2016-09-18T01:27:27.153226Z 0 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2016-09-18T01:27:27.153229Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2016-09-18T01:27:27.153231Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2016-09-18T01:27:27.153234Z 0 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2016-09-18T01:27:27.153236Z 0 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2016-09-18T01:27:27.153239Z 0 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2016-09-18T01:27:27.153241Z 0 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2016-09-18T01:27:27.153244Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2016-09-18T01:27:27.153246Z 0 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2016-09-18T01:27:27.153248Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2016-09-18T01:27:27.153251Z 0 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2016-09-18T01:27:27.153253Z 0 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2016-09-18T01:27:27.153256Z 0 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2016-09-18T01:27:27.153258Z 0 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2016-09-18T01:27:27.153260Z 0 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2016-09-18T01:27:27.153263Z 0 [Note] Shutting down plugin 'INNODB_METRICS'
+2016-09-18T01:27:27.153265Z 0 [Note] Shutting down plugin 'INNODB_TEMP_TABLE_INFO'
+2016-09-18T01:27:27.153268Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2016-09-18T01:27:27.153270Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2016-09-18T01:27:27.153272Z 0 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2016-09-18T01:27:27.153275Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2016-09-18T01:27:27.153277Z 0 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2016-09-18T01:27:27.153280Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2016-09-18T01:27:27.153282Z 0 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2016-09-18T01:27:27.153284Z 0 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2016-09-18T01:27:27.153287Z 0 [Note] Shutting down plugin 'INNODB_CMP'
+2016-09-18T01:27:27.153289Z 0 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2016-09-18T01:27:27.153292Z 0 [Note] Shutting down plugin 'INNODB_LOCKS'
+2016-09-18T01:27:27.153294Z 0 [Note] Shutting down plugin 'INNODB_TRX'
+2016-09-18T01:27:27.153296Z 0 [Note] Shutting down plugin 'InnoDB'
+2016-09-18T01:27:27.153328Z 0 [Note] InnoDB: FTS optimize thread exiting.
+2016-09-18T01:27:27.153392Z 0 [Note] InnoDB: Starting shutdown...
+2016-09-18T01:27:27.253573Z 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2016-09-18T01:27:27.253891Z 0 [Note] InnoDB: Buffer pool(s) dump completed at 160918 10:27:27
+2016-09-18T01:27:28.251316Z 0 [Note] InnoDB: Shutdown completed; log sequence number 32495906
+2016-09-18T01:27:28.253024Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2016-09-18T01:27:28.253033Z 0 [Note] Shutting down plugin 'MEMORY'
+2016-09-18T01:27:28.253038Z 0 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2016-09-18T01:27:28.253059Z 0 [Note] Shutting down plugin 'MRG_MYISAM'
+2016-09-18T01:27:28.253063Z 0 [Note] Shutting down plugin 'MyISAM'
+2016-09-18T01:27:28.253069Z 0 [Note] Shutting down plugin 'CSV'
+2016-09-18T01:27:28.253082Z 0 [Note] Shutting down plugin 'sha256_password'
+2016-09-18T01:27:28.253084Z 0 [Note] Shutting down plugin 'mysql_native_password'
+2016-09-18T01:27:28.253209Z 0 [Note] Shutting down plugin 'binlog'
+2016-09-18T01:27:28.253376Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
