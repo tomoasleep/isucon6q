@@ -1,0 +1,514 @@
+I, [2016-09-18T14:32:35.684871 #20679]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:32:35.719060 #20679]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:32:35.719198 #20679]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:32:35.719423 #20679]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:32:35.719496 #20679]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:32:35.720232 #20679]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:32:35.720732 #20679]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:32:35.720715 #20699]  INFO -- : worker=0 spawned pid=20699
+I, [2016-09-18T14:32:35.720838 #20699]  INFO -- : worker=0 ready
+I, [2016-09-18T14:32:35.721436 #20679]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:32:35.721716 #20702]  INFO -- : worker=1 spawned pid=20702
+I, [2016-09-18T14:32:35.721878 #20702]  INFO -- : worker=1 ready
+I, [2016-09-18T14:32:35.721879 #20705]  INFO -- : worker=2 spawned pid=20705
+I, [2016-09-18T14:32:35.721988 #20705]  INFO -- : worker=2 ready
+I, [2016-09-18T14:32:35.722449 #20679]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:32:35.722888 #20708]  INFO -- : worker=3 spawned pid=20708
+I, [2016-09-18T14:32:35.722992 #20708]  INFO -- : worker=3 ready
+I, [2016-09-18T14:32:35.723026 #20679]  INFO -- : master process ready
+I, [2016-09-18T14:32:35.723539 #20711]  INFO -- : worker=4 spawned pid=20711
+I, [2016-09-18T14:32:35.723640 #20711]  INFO -- : worker=4 ready
+I, [2016-09-18T14:33:09.135372 #20679]  INFO -- : reaped #<Process::Status: pid 20699 exit 0> worker=0
+I, [2016-09-18T14:33:09.135456 #20679]  INFO -- : reaped #<Process::Status: pid 20702 exit 0> worker=1
+I, [2016-09-18T14:33:09.135489 #20679]  INFO -- : reaped #<Process::Status: pid 20705 exit 0> worker=2
+I, [2016-09-18T14:33:09.135514 #20679]  INFO -- : reaped #<Process::Status: pid 20708 exit 0> worker=3
+I, [2016-09-18T14:33:09.135538 #20679]  INFO -- : reaped #<Process::Status: pid 20711 exit 0> worker=4
+I, [2016-09-18T14:33:09.135591 #20679]  INFO -- : master complete
+I, [2016-09-18T14:33:09.448239 #20742]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:33:09.491589 #20742]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:33:09.491733 #20742]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:33:09.491930 #20742]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:33:09.492022 #20742]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:33:09.492777 #20742]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:33:09.493294 #20742]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:33:09.493249 #20760]  INFO -- : worker=0 spawned pid=20760
+I, [2016-09-18T14:33:09.493384 #20760]  INFO -- : worker=0 ready
+I, [2016-09-18T14:33:09.493998 #20742]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:33:09.494450 #20766]  INFO -- : worker=2 spawned pid=20766
+I, [2016-09-18T14:33:09.494570 #20766]  INFO -- : worker=2 ready
+I, [2016-09-18T14:33:09.494714 #20742]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:33:09.494834 #20763]  INFO -- : worker=1 spawned pid=20763
+I, [2016-09-18T14:33:09.494942 #20763]  INFO -- : worker=1 ready
+I, [2016-09-18T14:33:09.495118 #20769]  INFO -- : worker=3 spawned pid=20769
+I, [2016-09-18T14:33:09.495225 #20769]  INFO -- : worker=3 ready
+I, [2016-09-18T14:33:09.495526 #20742]  INFO -- : master process ready
+I, [2016-09-18T14:33:09.495869 #20772]  INFO -- : worker=4 spawned pid=20772
+I, [2016-09-18T14:33:09.495973 #20772]  INFO -- : worker=4 ready
+I, [2016-09-18T14:34:47.818004 #20742]  INFO -- : reaped #<Process::Status: pid 20760 exit 0> worker=0
+I, [2016-09-18T14:34:47.818090 #20742]  INFO -- : reaped #<Process::Status: pid 20763 exit 0> worker=1
+I, [2016-09-18T14:34:47.818121 #20742]  INFO -- : reaped #<Process::Status: pid 20766 exit 0> worker=2
+I, [2016-09-18T14:34:47.818151 #20742]  INFO -- : reaped #<Process::Status: pid 20769 exit 0> worker=3
+I, [2016-09-18T14:34:47.818173 #20742]  INFO -- : reaped #<Process::Status: pid 20772 exit 0> worker=4
+I, [2016-09-18T14:34:47.818225 #20742]  INFO -- : master complete
+I, [2016-09-18T14:34:48.105611 #20865]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:34:48.139296 #20865]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:34:48.139434 #20865]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:34:48.139626 #20865]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:34:48.139715 #20865]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:34:48.140454 #20865]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:34:48.140968 #20865]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:34:48.140937 #20883]  INFO -- : worker=0 spawned pid=20883
+I, [2016-09-18T14:34:48.141070 #20883]  INFO -- : worker=0 ready
+I, [2016-09-18T14:34:48.141681 #20865]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:34:48.141991 #20886]  INFO -- : worker=1 spawned pid=20886
+I, [2016-09-18T14:34:48.142101 #20886]  INFO -- : worker=1 ready
+I, [2016-09-18T14:34:48.142076 #20889]  INFO -- : worker=2 spawned pid=20889
+I, [2016-09-18T14:34:48.142199 #20889]  INFO -- : worker=2 ready
+I, [2016-09-18T14:34:48.142672 #20865]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:34:48.143088 #20892]  INFO -- : worker=3 spawned pid=20892
+I, [2016-09-18T14:34:48.143204 #20892]  INFO -- : worker=3 ready
+I, [2016-09-18T14:34:48.143201 #20865]  INFO -- : master process ready
+I, [2016-09-18T14:34:48.143737 #20895]  INFO -- : worker=4 spawned pid=20895
+I, [2016-09-18T14:34:48.143839 #20895]  INFO -- : worker=4 ready
+I, [2016-09-18T14:38:17.868632 #20865]  INFO -- : reaped #<Process::Status: pid 20883 exit 0> worker=0
+I, [2016-09-18T14:38:17.868714 #20865]  INFO -- : reaped #<Process::Status: pid 20886 exit 0> worker=1
+I, [2016-09-18T14:38:17.868746 #20865]  INFO -- : reaped #<Process::Status: pid 20889 exit 0> worker=2
+I, [2016-09-18T14:38:17.868774 #20865]  INFO -- : reaped #<Process::Status: pid 20892 exit 0> worker=3
+I, [2016-09-18T14:38:17.868804 #20865]  INFO -- : reaped #<Process::Status: pid 20895 exit 0> worker=4
+I, [2016-09-18T14:38:17.868858 #20865]  INFO -- : master complete
+I, [2016-09-18T14:38:18.148239 #21481]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:38:18.181988 #21481]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:38:18.182129 #21481]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:38:18.182362 #21481]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:38:18.182441 #21481]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:38:18.183221 #21481]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:38:18.183697 #21481]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:38:18.183665 #21499]  INFO -- : worker=0 spawned pid=21499
+I, [2016-09-18T14:38:18.183797 #21499]  INFO -- : worker=0 ready
+I, [2016-09-18T14:38:18.184480 #21481]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:38:18.184769 #21502]  INFO -- : worker=1 spawned pid=21502
+I, [2016-09-18T14:38:18.184881 #21502]  INFO -- : worker=1 ready
+I, [2016-09-18T14:38:18.184853 #21505]  INFO -- : worker=2 spawned pid=21505
+I, [2016-09-18T14:38:18.184971 #21505]  INFO -- : worker=2 ready
+I, [2016-09-18T14:38:18.185436 #21481]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:38:18.185816 #21508]  INFO -- : worker=3 spawned pid=21508
+I, [2016-09-18T14:38:18.185938 #21508]  INFO -- : worker=3 ready
+I, [2016-09-18T14:38:18.185946 #21481]  INFO -- : master process ready
+I, [2016-09-18T14:38:18.186483 #21511]  INFO -- : worker=4 spawned pid=21511
+I, [2016-09-18T14:38:18.186594 #21511]  INFO -- : worker=4 ready
+I, [2016-09-18T14:49:35.337286 #21481]  INFO -- : reaped #<Process::Status: pid 21499 exit 0> worker=0
+I, [2016-09-18T14:49:35.337376 #21481]  INFO -- : reaped #<Process::Status: pid 21502 exit 0> worker=1
+I, [2016-09-18T14:49:35.337414 #21481]  INFO -- : reaped #<Process::Status: pid 21505 exit 0> worker=2
+I, [2016-09-18T14:49:35.337443 #21481]  INFO -- : reaped #<Process::Status: pid 21508 exit 0> worker=3
+I, [2016-09-18T14:49:35.337470 #21481]  INFO -- : reaped #<Process::Status: pid 21511 exit 0> worker=4
+I, [2016-09-18T14:49:35.337529 #21481]  INFO -- : master complete
+I, [2016-09-18T14:49:35.625222 #23767]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:49:35.659688 #23767]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:49:35.659829 #23767]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:49:35.660010 #23767]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:49:35.660079 #23767]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:49:35.660807 #23767]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:49:35.661328 #23767]  INFO -- : master process ready
+I, [2016-09-18T14:49:35.661323 #23776]  INFO -- : worker=0 spawned pid=23776
+I, [2016-09-18T14:49:35.661482 #23776]  INFO -- : worker=0 ready
+I, [2016-09-18T14:49:35.661930 #23779]  INFO -- : worker=1 spawned pid=23779
+I, [2016-09-18T14:49:35.662043 #23779]  INFO -- : worker=1 ready
+I, [2016-09-18T14:49:51.057590 #23767]  INFO -- : reaped #<Process::Status: pid 23776 exit 0> worker=0
+I, [2016-09-18T14:49:51.057681 #23767]  INFO -- : reaped #<Process::Status: pid 23779 exit 0> worker=1
+I, [2016-09-18T14:49:51.057737 #23767]  INFO -- : master complete
+I, [2016-09-18T14:49:51.333989 #23801]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:49:51.368500 #23801]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:49:51.368642 #23801]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:49:51.368865 #23801]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:49:51.369008 #23801]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:49:51.369987 #23801]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:49:51.370474 #23805]  INFO -- : worker=0 spawned pid=23805
+I, [2016-09-18T14:49:51.370618 #23805]  INFO -- : worker=0 ready
+I, [2016-09-18T14:49:51.370794 #23801]  INFO -- : master process ready
+I, [2016-09-18T14:49:51.371222 #23808]  INFO -- : worker=1 spawned pid=23808
+I, [2016-09-18T14:49:51.371322 #23808]  INFO -- : worker=1 ready
+2016-09-18 14:52:52 - Errno::ECONNRESET - Connection reset by peer:
+	<internal:prelude>:76:in `__read_nonblock'
+	<internal:prelude>:76:in `read_nonblock'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:154:in `rbuf_fill'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1308:in `request_get'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:481:in `block in get_response'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:853:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:479:in `get_response'
+	/home/isucon/webapp/ruby/lib/isutar/web.rb:64:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+2016-09-18 14:52:52 - Errno::ECONNRESET - Connection reset by peer:
+	<internal:prelude>:76:in `__read_nonblock'
+	<internal:prelude>:76:in `read_nonblock'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:154:in `rbuf_fill'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1308:in `request_get'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:481:in `block in get_response'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:853:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:479:in `get_response'
+	/home/isucon/webapp/ruby/lib/isutar/web.rb:64:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+I, [2016-09-18T14:52:52.236959 #23801]  INFO -- : reaped #<Process::Status: pid 23805 exit 0> worker=0
+I, [2016-09-18T14:52:52.237044 #23801]  INFO -- : reaped #<Process::Status: pid 23808 exit 0> worker=1
+I, [2016-09-18T14:52:52.237099 #23801]  INFO -- : master complete
+I, [2016-09-18T14:52:52.517195 #24116]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:52:52.552517 #24116]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:52:52.552671 #24116]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:52:52.552863 #24116]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:52:52.552935 #24116]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:52:52.554750 #24116]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:52:52.555212 #24126]  INFO -- : worker=0 spawned pid=24126
+I, [2016-09-18T14:52:52.555349 #24126]  INFO -- : worker=0 ready
+I, [2016-09-18T14:52:52.555290 #24116]  INFO -- : master process ready
+I, [2016-09-18T14:52:52.555961 #24129]  INFO -- : worker=1 spawned pid=24129
+I, [2016-09-18T14:52:52.556071 #24129]  INFO -- : worker=1 ready
+I, [2016-09-18T14:53:23.444878 #24116]  INFO -- : reaped #<Process::Status: pid 24126 exit 0> worker=0
+I, [2016-09-18T14:53:23.444962 #24116]  INFO -- : reaped #<Process::Status: pid 24129 exit 0> worker=1
+I, [2016-09-18T14:53:23.445025 #24116]  INFO -- : master complete
+I, [2016-09-18T14:53:23.747723 #24283]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:53:23.785895 #24283]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:53:23.786031 #24283]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:53:23.786221 #24283]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:53:23.786313 #24283]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:53:23.787064 #24283]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:53:23.787555 #24283]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:53:23.787530 #24302]  INFO -- : worker=0 spawned pid=24302
+I, [2016-09-18T14:53:23.787657 #24302]  INFO -- : worker=0 ready
+I, [2016-09-18T14:53:23.788266 #24283]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:53:23.788554 #24305]  INFO -- : worker=1 spawned pid=24305
+I, [2016-09-18T14:53:23.788654 #24305]  INFO -- : worker=1 ready
+I, [2016-09-18T14:53:23.788651 #24308]  INFO -- : worker=2 spawned pid=24308
+I, [2016-09-18T14:53:23.788760 #24308]  INFO -- : worker=2 ready
+I, [2016-09-18T14:53:23.789209 #24283]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:53:23.789577 #24311]  INFO -- : worker=3 spawned pid=24311
+I, [2016-09-18T14:53:23.789683 #24311]  INFO -- : worker=3 ready
+I, [2016-09-18T14:53:23.789726 #24283]  INFO -- : master process ready
+I, [2016-09-18T14:53:23.790195 #24314]  INFO -- : worker=4 spawned pid=24314
+I, [2016-09-18T14:53:23.790316 #24314]  INFO -- : worker=4 ready
+I, [2016-09-18T14:53:49.362807 #24283]  INFO -- : reaped #<Process::Status: pid 24302 exit 0> worker=0
+I, [2016-09-18T14:53:49.363044 #24283]  INFO -- : reaped #<Process::Status: pid 24308 exit 0> worker=2
+I, [2016-09-18T14:53:49.463330 #24283]  INFO -- : reaped #<Process::Status: pid 24305 exit 0> worker=1
+I, [2016-09-18T14:53:49.463412 #24283]  INFO -- : reaped #<Process::Status: pid 24311 exit 0> worker=3
+I, [2016-09-18T14:53:49.463455 #24283]  INFO -- : reaped #<Process::Status: pid 24314 exit 0> worker=4
+I, [2016-09-18T14:53:49.463547 #24283]  INFO -- : master complete
+I, [2016-09-18T14:53:49.749332 #24359]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:53:49.782798 #24359]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:53:49.782939 #24359]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:53:49.783155 #24359]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:53:49.783231 #24359]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:53:49.784067 #24359]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:53:49.784585 #24359]  INFO -- : master process ready
+I, [2016-09-18T14:53:49.784567 #24368]  INFO -- : worker=0 spawned pid=24368
+I, [2016-09-18T14:53:49.784694 #24368]  INFO -- : worker=0 ready
+I, [2016-09-18T14:53:49.785277 #24371]  INFO -- : worker=1 spawned pid=24371
+I, [2016-09-18T14:53:49.785386 #24371]  INFO -- : worker=1 ready
+2016-09-18 14:56:02 - Errno::ECONNRESET - Connection reset by peer:
+	<internal:prelude>:76:in `__read_nonblock'
+	<internal:prelude>:76:in `read_nonblock'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:154:in `rbuf_fill'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1308:in `request_get'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:481:in `block in get_response'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:853:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:479:in `get_response'
+	/home/isucon/webapp/ruby/lib/isutar/web.rb:64:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'2016-09-18 14:56:02 - Errno::ECONNRESET - Connection reset by peer:
+	<internal:prelude>:76:in `__read_nonblock'
+	<internal:prelude>:76:in `read_nonblock'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:154:in `rbuf_fill'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:136:in `readuntil'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/protocol.rb:146:in `readline'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:40:in `read_status_line'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http/response.rb:29:in `read_new'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1437:in `block in transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:1308:in `request_get'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:481:in `block in get_response'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:853:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	/home/isucon/.local/ruby/lib/ruby/2.3.0/net/http.rb:479:in `get_response'
+	/home/isucon/webapp/ruby/lib/isutar/web.rb:64:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+
+I, [2016-09-18T14:56:02.764604 #24359]  INFO -- : reaped #<Process::Status: pid 24368 exit 0> worker=0
+I, [2016-09-18T14:56:02.764706 #24359]  INFO -- : reaped #<Process::Status: pid 24371 exit 0> worker=1
+I, [2016-09-18T14:56:02.764762 #24359]  INFO -- : master complete
+I, [2016-09-18T14:56:03.045876 #24771]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:56:03.081034 #24771]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:56:03.081177 #24771]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:56:03.081389 #24771]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:56:03.081464 #24771]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:56:03.082222 #24771]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:56:03.082742 #24781]  INFO -- : worker=0 spawned pid=24781
+I, [2016-09-18T14:56:03.082871 #24781]  INFO -- : worker=0 ready
+I, [2016-09-18T14:56:03.083535 #24771]  INFO -- : master process ready
+I, [2016-09-18T14:56:03.083896 #24784]  INFO -- : worker=1 spawned pid=24784
+I, [2016-09-18T14:56:03.084131 #24784]  INFO -- : worker=1 ready
+I, [2016-09-18T14:56:08.351978 #24771]  INFO -- : reaped #<Process::Status: pid 24781 exit 0> worker=0
+I, [2016-09-18T14:56:08.352065 #24771]  INFO -- : reaped #<Process::Status: pid 24784 exit 0> worker=1
+I, [2016-09-18T14:56:08.352123 #24771]  INFO -- : master complete
+I, [2016-09-18T14:56:08.639981 #24815]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:56:08.677045 #24815]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:56:08.677193 #24815]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:56:08.677401 #24815]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:56:08.677474 #24815]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:56:08.678279 #24815]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:56:08.680009 #24826]  INFO -- : worker=0 spawned pid=24826
+I, [2016-09-18T14:56:08.680138 #24826]  INFO -- : worker=0 ready
+I, [2016-09-18T14:56:08.680822 #24815]  INFO -- : master process ready
+I, [2016-09-18T14:56:08.681214 #24829]  INFO -- : worker=1 spawned pid=24829
+I, [2016-09-18T14:56:08.681319 #24829]  INFO -- : worker=1 ready
+I, [2016-09-18T14:59:06.746937 #24815]  INFO -- : reaped #<Process::Status: pid 24826 exit 0> worker=0
+I, [2016-09-18T14:59:06.747022 #24815]  INFO -- : reaped #<Process::Status: pid 24829 exit 0> worker=1
+I, [2016-09-18T14:59:06.747078 #24815]  INFO -- : master complete
