@@ -155,7 +155,7 @@ module Isuda
         OFFSET #{per_page * (page - 1)}
       |)
 
-      keywords = db.xquery(%| select keyword from entry order by character_length(keyword) desc |)
+      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
 
       entries.each do |entry|
@@ -227,12 +227,12 @@ module Isuda
       description = params[:description]
       halt(400) if is_spam_content(description) || is_spam_content(keyword)
 
-      bound = [@user_id, keyword, description] * 2
+      bound = [@user_id, keyword, description, keyword.length] * 2
       db.xquery(%|
-        INSERT INTO entry (author_id, keyword, description, created_at, updated_at)
-        VALUES (?, ?, ?, NOW(), NOW())
+        INSERT INTO entry (author_id, keyword, description, created_at, updated_at, keyword_length)
+        VALUES (?, ?, ?, NOW(), NOW(), ?)
         ON DUPLICATE KEY UPDATE
-        author_id = ?, keyword = ?, description = ?, updated_at = NOW()
+        author_id = ?, keyword = ?, description = ?, updated_at = NOW(), keyword_length = ?
       |, *bound)
 
       redirect_found '/'
@@ -242,7 +242,7 @@ module Isuda
       keyword = params[:keyword] or halt(400)
 
       entry = db.xquery(%| select keyword,description from entry where keyword = ? |, keyword).first or halt(404)
-      keywords = db.xquery(%| select * from entry order by character_length(keyword) desc |)
+      keywords = db.xquery(%| select keyword from entry order by keyword_length desc |)
       pattern = keywords.map {|k| Regexp.escape(k[:keyword]) }.join('|')
 
       entry[:stars] = load_stars(entry[:keyword])
