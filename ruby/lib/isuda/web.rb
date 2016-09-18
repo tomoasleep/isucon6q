@@ -169,6 +169,11 @@ module Isuda
           v[l] = v[l] ? "#{v[l]}|#{k}" : k
         end
 
+        v2 = []
+        v.each do |k, v|
+          v2 << v
+        end
+
         v2 = v2.join("|")
         redis.set("key_total", v2)
         v2
