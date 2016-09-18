@@ -6,10 +6,13 @@ require 'mysql2'
 require 'mysql2-cs-bind'
 require 'rack/utils'
 require 'sinatra/base'
+require 'rack-lineprof' unless ENV['RACK_ENV'] == 'production'
 
 module Isutar
   class Web < ::Sinatra::Base
     enable :protection
+
+    use Rack::Lineprof unless ENV['RACK_ENV'] == 'production'
 
     set :db_user, ENV['ISUTAR_DB_USER'] || 'root'
     set :db_password, ENV['ISUTAR_DB_PASSWORD'] || ''
@@ -23,15 +26,28 @@ module Isutar
     end
 
     helpers do
-      def db
-        Thread.current[:db] ||=
+      def isuda_db
+        Thread.current[:isuda_db] ||=
           begin
-            _, _, attrs_part = settings.dsn.split(':', 3)
-            attrs = Hash[attrs_part.split(';').map {|part| part.split('=', 2) }]
             mysql = Mysql2::Client.new(
               username: settings.db_user,
               password: settings.db_password,
-              database: attrs['db'],
+              database: 'isuda',
+              encoding: 'utf8mb4',
+              init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
+            )
+            mysql.query_options.update(symbolize_keys: true)
+            mysql
+          end
+      end
+
+      def db
+        Thread.current[:db] ||=
+          begin
+            mysql = Mysql2::Client.new(
+              username: settings.db_user,
+              password: settings.db_password,
+              database: 'isutar',
               encoding: 'utf8mb4',
               init_command: %|SET SESSION sql_mode='TRADITIONAL,NO_AUTO_VALUE_ON_ZERO,ONLY_FULL_GROUP_BY'|,
             )
@@ -57,12 +73,8 @@ module Isutar
     end
 
     post '/stars' do
-      keyword = params[:keyword]
-
-      isuda_keyword_url = URI(settings.isuda_origin)
-      isuda_keyword_url.path = '/keyword/%s' % [Rack::Utils.escape_path(keyword)]
-      res = Net::HTTP.get_response(isuda_keyword_url)
-      halt(404) unless Net::HTTPSuccess === res
+      keyword = params[:keyword] or halt(404)
+      isuda_db.xquery(%| select keyword from entry where keyword = ? |, keyword).first or halt(404)
 
       user_name = params[:user]
       db.xquery(%|
