@@ -1,0 +1,470 @@
+I, [2016-09-18T15:11:21.742211 #28007]  INFO -- : Refreshing Gem list
+I, [2016-09-18T15:11:21.785377 #28007]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T15:11:21.785514 #28007]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T15:11:21.785701 #28007]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T15:11:21.785773 #28007]  INFO -- : worker=0 spawning...
+I, [2016-09-18T15:11:21.786516 #28007]  INFO -- : worker=1 spawning...
+I, [2016-09-18T15:11:21.787022 #28007]  INFO -- : worker=2 spawning...
+I, [2016-09-18T15:11:21.787670 #28022]  INFO -- : worker=0 spawned pid=28022
+I, [2016-09-18T15:11:21.787794 #28022]  INFO -- : worker=0 ready
+I, [2016-09-18T15:11:21.788349 #28007]  INFO -- : worker=3 spawning...
+I, [2016-09-18T15:11:21.788867 #28024]  INFO -- : worker=1 spawned pid=28024
+I, [2016-09-18T15:11:21.788976 #28024]  INFO -- : worker=1 ready
+I, [2016-09-18T15:11:21.789509 #28007]  INFO -- : worker=4 spawning...
+I, [2016-09-18T15:11:21.790015 #28027]  INFO -- : worker=2 spawned pid=28027
+I, [2016-09-18T15:11:21.790129 #28027]  INFO -- : worker=2 ready
+I, [2016-09-18T15:11:21.790715 #28007]  INFO -- : master process ready
+I, [2016-09-18T15:11:21.791318 #28030]  INFO -- : worker=3 spawned pid=28030
+I, [2016-09-18T15:11:21.791798 #28030]  INFO -- : worker=3 ready
+I, [2016-09-18T15:11:21.792349 #28033]  INFO -- : worker=4 spawned pid=28033
+I, [2016-09-18T15:11:21.792456 #28033]  INFO -- : worker=4 ready
+I, [2016-09-18T15:21:51.737077 #28007]  INFO -- : reaped #<Process::Status: pid 28022 exit 0> worker=0
+I, [2016-09-18T15:21:51.737163 #28007]  INFO -- : reaped #<Process::Status: pid 28024 exit 0> worker=1
+I, [2016-09-18T15:21:51.737265 #28007]  INFO -- : reaped #<Process::Status: pid 28027 exit 0> worker=2
+I, [2016-09-18T15:21:51.837582 #28007]  INFO -- : reaped #<Process::Status: pid 28030 exit 0> worker=3
+I, [2016-09-18T15:21:51.837688 #28007]  INFO -- : reaped #<Process::Status: pid 28033 exit 0> worker=4
+I, [2016-09-18T15:21:51.837788 #28007]  INFO -- : master complete
+I, [2016-09-18T15:21:52.125496 #28571]  INFO -- : Refreshing Gem list
+I, [2016-09-18T15:21:52.168815 #28571]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T15:21:52.168949 #28571]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T15:21:52.169163 #28571]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T15:21:52.169230 #28571]  INFO -- : worker=0 spawning...
+I, [2016-09-18T15:21:52.169969 #28571]  INFO -- : worker=1 spawning...
+I, [2016-09-18T15:21:52.170460 #28571]  INFO -- : worker=2 spawning...
+I, [2016-09-18T15:21:52.171106 #28584]  INFO -- : worker=0 spawned pid=28584
+I, [2016-09-18T15:21:52.171590 #28584]  INFO -- : worker=0 ready
+I, [2016-09-18T15:21:52.172136 #28571]  INFO -- : worker=3 spawning...
+I, [2016-09-18T15:21:52.172895 #28586]  INFO -- : worker=1 spawned pid=28586
+I, [2016-09-18T15:21:52.173010 #28586]  INFO -- : worker=1 ready
+I, [2016-09-18T15:21:52.173538 #28571]  INFO -- : worker=4 spawning...
+I, [2016-09-18T15:21:52.174084 #28589]  INFO -- : worker=2 spawned pid=28589
+I, [2016-09-18T15:21:52.174205 #28589]  INFO -- : worker=2 ready
+I, [2016-09-18T15:21:52.174791 #28571]  INFO -- : master process ready
+I, [2016-09-18T15:21:52.175400 #28592]  INFO -- : worker=3 spawned pid=28592
+I, [2016-09-18T15:21:52.175512 #28592]  INFO -- : worker=3 ready
+I, [2016-09-18T15:21:52.176077 #28595]  INFO -- : worker=4 spawned pid=28595
+I, [2016-09-18T15:21:52.176194 #28595]  INFO -- : worker=4 ready
+I, [2016-09-18T15:22:19.944366 #28571]  INFO -- : reaped #<Process::Status: pid 28584 exit 0> worker=0
+I, [2016-09-18T15:22:19.944447 #28571]  INFO -- : reaped #<Process::Status: pid 28586 exit 0> worker=1
+I, [2016-09-18T15:22:19.944487 #28571]  INFO -- : reaped #<Process::Status: pid 28589 exit 0> worker=2
+I, [2016-09-18T15:22:20.044815 #28571]  INFO -- : reaped #<Process::Status: pid 28592 exit 0> worker=3
+I, [2016-09-18T15:22:20.044908 #28571]  INFO -- : reaped #<Process::Status: pid 28595 exit 0> worker=4
+I, [2016-09-18T15:22:20.044973 #28571]  INFO -- : master complete
+I, [2016-09-18T15:22:20.337735 #28647]  INFO -- : Refreshing Gem list
+I, [2016-09-18T15:22:20.381974 #28647]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T15:22:20.382122 #28647]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T15:22:20.382737 #28647]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T15:22:20.382814 #28647]  INFO -- : worker=0 spawning...
+I, [2016-09-18T15:22:20.383598 #28647]  INFO -- : worker=1 spawning...
+I, [2016-09-18T15:22:20.384100 #28647]  INFO -- : worker=2 spawning...
+I, [2016-09-18T15:22:20.384719 #28658]  INFO -- : worker=0 spawned pid=28658
+I, [2016-09-18T15:22:20.384843 #28658]  INFO -- : worker=0 ready
+I, [2016-09-18T15:22:20.385411 #28647]  INFO -- : worker=3 spawning...
+I, [2016-09-18T15:22:20.385945 #28660]  INFO -- : worker=1 spawned pid=28660
+I, [2016-09-18T15:22:20.386056 #28660]  INFO -- : worker=1 ready
+I, [2016-09-18T15:22:20.386657 #28647]  INFO -- : worker=4 spawning...
+I, [2016-09-18T15:22:20.387196 #28663]  INFO -- : worker=2 spawned pid=28663
+I, [2016-09-18T15:22:20.387324 #28663]  INFO -- : worker=2 ready
+I, [2016-09-18T15:22:20.387909 #28647]  INFO -- : master process ready
+I, [2016-09-18T15:22:20.388526 #28666]  INFO -- : worker=3 spawned pid=28666
+I, [2016-09-18T15:22:20.388654 #28666]  INFO -- : worker=3 ready
+I, [2016-09-18T15:22:20.389232 #28669]  INFO -- : worker=4 spawned pid=28669
+I, [2016-09-18T15:22:20.389348 #28669]  INFO -- : worker=4 ready
+2016-09-18 15:22:59 - Mysql2::Error - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from entry where keyword = '生田正治'' at line 1:
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-cs-bind-0.0.6/lib/mysql2-cs-bind.rb:14:in `xquery'
+	/home/isucon/webapp/ruby/lib/isuda/web.rb:237:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+2016-09-18 15:22:59 - Mysql2::Error - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from entry where keyword = 'JR四国の車両形式'' at line 1:
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-cs-bind-0.0.6/lib/mysql2-cs-bind.rb:14:in `xquery'
+	/home/isucon/webapp/ruby/lib/isuda/web.rb:237:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+2016-09-18 15:22:59 - Mysql2::Error - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from entry where keyword = 'JR四国の車両形式'' at line 1:
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-cs-bind-0.0.6/lib/mysql2-cs-bind.rb:14:in `xquery'
+	/home/isucon/webapp/ruby/lib/isuda/web.rb:237:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+2016-09-18 15:22:59 - Mysql2::Error - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from entry where keyword = '平尾山'' at line 1:
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-cs-bind-0.0.6/lib/mysql2-cs-bind.rb:14:in `xquery'
+	/home/isucon/webapp/ruby/lib/isuda/web.rb:237:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+2016-09-18 15:22:59 - Mysql2::Error - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from entry where keyword = '平尾山'' at line 1:
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/mysql2-cs-bind-0.0.6/lib/mysql2-cs-bind.rb:14:in `xquery'
+	/home/isucon/webapp/ruby/lib/isuda/web.rb:237:in `block in <class:Web>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1611:in `block in compile!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (3 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:994:in `route_eval'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:975:in `block (2 levels) in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1015:in `block in process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1013:in `process_route'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:973:in `block in route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `each'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:972:in `route!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1085:in `block in dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1082:in `dispatch!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `block in call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `block in invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `catch'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1067:in `invoke'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:907:in `call!'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:895:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:182:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:2013:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `block in call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1787:in `synchronize'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/sinatra-1.4.7/lib/sinatra/base.rb:1487:in `call'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+	/home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli/exec.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:332:in `exec'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:20:in `dispatch'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/cli.rb:11:in `start'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:34:in `block in <top (required)>'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+	/home/isucon/.local/ruby/lib/ruby/gems/2.3.0/gems/bundler-1.13.1/exe/bundle:26:in `<top (required)>'
+	/home/isucon/.local/ruby/bin/bundle:23:in `load'
+	/home/isucon/.local/ruby/bin/bundle:23:in `<main>'
+I, [2016-09-18T15:26:44.554366 #28647]  INFO -- : reaped #<Process::Status: pid 28658 exit 0> worker=0
+I, [2016-09-18T15:26:44.554491 #28647]  INFO -- : reaped #<Process::Status: pid 28660 exit 0> worker=1
+I, [2016-09-18T15:26:44.554559 #28647]  INFO -- : reaped #<Process::Status: pid 28663 exit 0> worker=2
+I, [2016-09-18T15:26:44.554611 #28647]  INFO -- : reaped #<Process::Status: pid 28666 exit 0> worker=3
+I, [2016-09-18T15:26:44.554728 #28647]  INFO -- : reaped #<Process::Status: pid 28669 exit 0> worker=4
+I, [2016-09-18T15:26:44.554774 #28647]  INFO -- : master complete
+I, [2016-09-18T15:26:44.845251 #28856]  INFO -- : Refreshing Gem list
+I, [2016-09-18T15:26:44.887378 #28856]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T15:26:44.887506 #28856]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T15:26:44.887701 #28856]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T15:26:44.887770 #28856]  INFO -- : worker=0 spawning...
+I, [2016-09-18T15:26:44.888522 #28856]  INFO -- : worker=1 spawning...
+I, [2016-09-18T15:26:44.888986 #28856]  INFO -- : worker=2 spawning...
+I, [2016-09-18T15:26:44.889551 #28866]  INFO -- : worker=0 spawned pid=28866
+I, [2016-09-18T15:26:44.889665 #28866]  INFO -- : worker=0 ready
+I, [2016-09-18T15:26:44.890210 #28856]  INFO -- : worker=3 spawning...
+I, [2016-09-18T15:26:44.890689 #28868]  INFO -- : worker=1 spawned pid=28868
+I, [2016-09-18T15:26:44.890809 #28868]  INFO -- : worker=1 ready
+I, [2016-09-18T15:26:44.891359 #28856]  INFO -- : worker=4 spawning...
+I, [2016-09-18T15:26:44.891878 #28871]  INFO -- : worker=2 spawned pid=28871
+I, [2016-09-18T15:26:44.891993 #28871]  INFO -- : worker=2 ready
+I, [2016-09-18T15:26:44.892547 #28856]  INFO -- : master process ready
+I, [2016-09-18T15:26:44.893080 #28874]  INFO -- : worker=3 spawned pid=28874
+I, [2016-09-18T15:26:44.893191 #28874]  INFO -- : worker=3 ready
+I, [2016-09-18T15:26:44.893717 #28877]  INFO -- : worker=4 spawned pid=28877
+I, [2016-09-18T15:26:44.893828 #28877]  INFO -- : worker=4 ready
+I, [2016-09-18T15:32:25.101222 #28856]  INFO -- : reaped #<Process::Status: pid 28866 exit 0> worker=0
+I, [2016-09-18T15:32:25.101354 #28856]  INFO -- : reaped #<Process::Status: pid 28868 exit 0> worker=1
+I, [2016-09-18T15:32:25.101414 #28856]  INFO -- : reaped #<Process::Status: pid 28871 exit 0> worker=2
+I, [2016-09-18T15:32:25.101468 #28856]  INFO -- : reaped #<Process::Status: pid 28874 exit 0> worker=3
+I, [2016-09-18T15:32:25.101512 #28856]  INFO -- : reaped #<Process::Status: pid 28877 exit 0> worker=4
+I, [2016-09-18T15:32:25.101565 #28856]  INFO -- : master complete
+I, [2016-09-18T15:32:25.424289 #30309]  INFO -- : Refreshing Gem list
+I, [2016-09-18T15:32:25.473256 #30309]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T15:32:25.473394 #30309]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T15:32:25.473584 #30309]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T15:32:25.473706 #30309]  INFO -- : worker=0 spawning...
+I, [2016-09-18T15:32:25.474534 #30309]  INFO -- : worker=1 spawning...
+I, [2016-09-18T15:32:25.475033 #30309]  INFO -- : worker=2 spawning...
+I, [2016-09-18T15:32:25.475761 #30322]  INFO -- : worker=0 spawned pid=30322
+I, [2016-09-18T15:32:25.475884 #30322]  INFO -- : worker=0 ready
+I, [2016-09-18T15:32:25.476487 #30309]  INFO -- : worker=3 spawning...
+I, [2016-09-18T15:32:25.477103 #30324]  INFO -- : worker=1 spawned pid=30324
+I, [2016-09-18T15:32:25.477217 #30324]  INFO -- : worker=1 ready
+I, [2016-09-18T15:32:25.477830 #30309]  INFO -- : worker=4 spawning...
+I, [2016-09-18T15:32:25.478424 #30327]  INFO -- : worker=2 spawned pid=30327
+I, [2016-09-18T15:32:25.478561 #30327]  INFO -- : worker=2 ready
+I, [2016-09-18T15:32:25.479207 #30309]  INFO -- : master process ready
+I, [2016-09-18T15:32:25.479877 #30330]  INFO -- : worker=3 spawned pid=30330
+I, [2016-09-18T15:32:25.479990 #30330]  INFO -- : worker=3 ready
+I, [2016-09-18T15:32:25.480588 #30333]  INFO -- : worker=4 spawned pid=30333
+I, [2016-09-18T15:32:25.480746 #30333]  INFO -- : worker=4 ready
+I, [2016-09-18T15:33:43.067881 #30309]  INFO -- : reaped #<Process::Status: pid 30322 exit 0> worker=0
+I, [2016-09-18T15:33:43.067977 #30309]  INFO -- : reaped #<Process::Status: pid 30324 exit 0> worker=1
+I, [2016-09-18T15:33:43.168297 #30309]  INFO -- : reaped #<Process::Status: pid 30327 exit 0> worker=2
+I, [2016-09-18T15:33:43.168396 #30309]  INFO -- : reaped #<Process::Status: pid 30330 exit 0> worker=3
+I, [2016-09-18T15:33:43.168429 #30309]  INFO -- : reaped #<Process::Status: pid 30333 exit 0> worker=4
+I, [2016-09-18T15:33:43.168490 #30309]  INFO -- : master complete
