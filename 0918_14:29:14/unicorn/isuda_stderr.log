@@ -1,0 +1,26 @@
+I, [2016-09-18T14:02:19.277217 #18786]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:02:19.323354 #18786]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T14:02:19.323494 #18786]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T14:02:19.323681 #18786]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T14:02:19.323771 #18786]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:02:19.324515 #18786]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:02:19.324985 #18786]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:02:19.325650 #18800]  INFO -- : worker=0 spawned pid=18800
+I, [2016-09-18T14:02:19.325777 #18800]  INFO -- : worker=0 ready
+I, [2016-09-18T14:02:19.326373 #18786]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:02:19.326923 #18802]  INFO -- : worker=1 spawned pid=18802
+I, [2016-09-18T14:02:19.327051 #18802]  INFO -- : worker=1 ready
+I, [2016-09-18T14:02:19.327601 #18786]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:02:19.328147 #18805]  INFO -- : worker=2 spawned pid=18805
+I, [2016-09-18T14:02:19.328270 #18805]  INFO -- : worker=2 ready
+I, [2016-09-18T14:02:19.328834 #18786]  INFO -- : master process ready
+I, [2016-09-18T14:02:19.329499 #18808]  INFO -- : worker=3 spawned pid=18808
+I, [2016-09-18T14:02:19.329623 #18808]  INFO -- : worker=3 ready
+I, [2016-09-18T14:02:19.330209 #18811]  INFO -- : worker=4 spawned pid=18811
+I, [2016-09-18T14:02:19.330355 #18811]  INFO -- : worker=4 ready
+I, [2016-09-18T14:02:30.093470 #18786]  INFO -- : reaped #<Process::Status: pid 18800 exit 0> worker=0
+I, [2016-09-18T14:02:30.093567 #18786]  INFO -- : reaped #<Process::Status: pid 18802 exit 0> worker=1
+I, [2016-09-18T14:02:30.093604 #18786]  INFO -- : reaped #<Process::Status: pid 18805 exit 0> worker=2
+I, [2016-09-18T14:02:30.093632 #18786]  INFO -- : reaped #<Process::Status: pid 18808 exit 0> worker=3
+I, [2016-09-18T14:02:30.093664 #18786]  INFO -- : reaped #<Process::Status: pid 18811 exit 0> worker=4
+I, [2016-09-18T14:02:30.093721 #18786]  INFO -- : master complete

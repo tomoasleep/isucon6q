@@ -1,0 +1,96 @@
+I, [2016-09-18T14:14:44.691405 #19829]  INFO -- : Refreshing Gem list
+F, [2016-09-18T14:14:44.727420 #19829] FATAL -- : error adding listener addr=/var/run/unicorn/isutar-unicorn.sock
+Errno::ENOENT: No such file or directory - connect(2) for /var/run/unicorn/isutar-unicorn.sock
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-09-18T14:14:45.200940 #19837]  INFO -- : Refreshing Gem list
+F, [2016-09-18T14:14:45.242191 #19837] FATAL -- : error adding listener addr=/var/run/unicorn/isutar-unicorn.sock
+Errno::ENOENT: No such file or directory - connect(2) for /var/run/unicorn/isutar-unicorn.sock
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-09-18T14:14:45.716769 #19846]  INFO -- : Refreshing Gem list
+F, [2016-09-18T14:14:45.752025 #19846] FATAL -- : error adding listener addr=/var/run/unicorn/isutar-unicorn.sock
+Errno::ENOENT: No such file or directory - connect(2) for /var/run/unicorn/isutar-unicorn.sock
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-09-18T14:14:46.221744 #19856]  INFO -- : Refreshing Gem list
+F, [2016-09-18T14:14:46.258665 #19856] FATAL -- : error adding listener addr=/var/run/unicorn/isutar-unicorn.sock
+Errno::ENOENT: No such file or directory - connect(2) for /var/run/unicorn/isutar-unicorn.sock
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-09-18T14:14:46.726795 #19866]  INFO -- : Refreshing Gem list
+F, [2016-09-18T14:14:46.761258 #19866] FATAL -- : error adding listener addr=/var/run/unicorn/isutar-unicorn.sock
+Errno::ENOENT: No such file or directory - connect(2) for /var/run/unicorn/isutar-unicorn.sock
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `initialize'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `new'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/socket_helper.rb:122:in `bind_listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:231:in `listen'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `each'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:130:in `start'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/isucon/webapp/ruby/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-09-18T14:18:55.467497 #20102]  INFO -- : Refreshing Gem list
+I, [2016-09-18T14:18:55.501999 #20102]  INFO -- : unlinking existing socket=/tmp/isutar-unicorn.sock
+I, [2016-09-18T14:18:55.502149 #20102]  INFO -- : listening on addr=/tmp/isutar-unicorn.sock fd=11
+I, [2016-09-18T14:18:55.502390 #20102]  INFO -- : listening on addr=0.0.0.0:5001 fd=12
+I, [2016-09-18T14:18:55.502468 #20102]  INFO -- : worker=0 spawning...
+I, [2016-09-18T14:18:55.503242 #20102]  INFO -- : worker=1 spawning...
+I, [2016-09-18T14:18:55.503716 #20102]  INFO -- : worker=2 spawning...
+I, [2016-09-18T14:18:55.504292 #20106]  INFO -- : worker=0 spawned pid=20106
+I, [2016-09-18T14:18:55.504421 #20106]  INFO -- : worker=0 ready
+I, [2016-09-18T14:18:55.504961 #20102]  INFO -- : worker=3 spawning...
+I, [2016-09-18T14:18:55.505433 #20108]  INFO -- : worker=1 spawned pid=20108
+I, [2016-09-18T14:18:55.505537 #20108]  INFO -- : worker=1 ready
+I, [2016-09-18T14:18:55.506059 #20102]  INFO -- : worker=4 spawning...
+I, [2016-09-18T14:18:55.506551 #20111]  INFO -- : worker=2 spawned pid=20111
+I, [2016-09-18T14:18:55.506656 #20111]  INFO -- : worker=2 ready
+I, [2016-09-18T14:18:55.507227 #20102]  INFO -- : master process ready
+I, [2016-09-18T14:18:55.507784 #20114]  INFO -- : worker=3 spawned pid=20114
+I, [2016-09-18T14:18:55.507889 #20114]  INFO -- : worker=3 ready
+I, [2016-09-18T14:18:55.508386 #20117]  INFO -- : worker=4 spawned pid=20117
+I, [2016-09-18T14:18:55.508485 #20117]  INFO -- : worker=4 ready
+I, [2016-09-18T14:20:09.716293 #20102]  INFO -- : reaped #<Process::Status: pid 20106 exit 0> worker=0
+I, [2016-09-18T14:20:09.716378 #20102]  INFO -- : reaped #<Process::Status: pid 20108 exit 0> worker=1
+I, [2016-09-18T14:20:09.716409 #20102]  INFO -- : reaped #<Process::Status: pid 20111 exit 0> worker=2
+I, [2016-09-18T14:20:09.716435 #20102]  INFO -- : reaped #<Process::Status: pid 20114 exit 0> worker=3
+I, [2016-09-18T14:20:09.716459 #20102]  INFO -- : reaped #<Process::Status: pid 20117 exit 0> worker=4
+I, [2016-09-18T14:20:09.716516 #20102]  INFO -- : master complete
