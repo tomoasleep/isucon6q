@@ -1,0 +1,40 @@
+I, [2016-09-18T17:43:23.320068 #40096]  INFO -- : Refreshing Gem list
+I, [2016-09-18T17:43:23.378985 #40096]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T17:43:23.379130 #40096]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=7
+I, [2016-09-18T17:43:23.379294 #40096]  INFO -- : listening on addr=0.0.0.0:5000 fd=8
+I, [2016-09-18T17:43:23.379367 #40096]  INFO -- : worker=0 spawning...
+I, [2016-09-18T17:43:23.380252 #40096]  INFO -- : worker=1 spawning...
+I, [2016-09-18T17:43:23.380708 #40104]  INFO -- : worker=0 spawned pid=40104
+I, [2016-09-18T17:43:23.380868 #40104]  INFO -- : worker=0 ready
+I, [2016-09-18T17:43:23.381497 #40096]  INFO -- : worker=2 spawning...
+I, [2016-09-18T17:43:23.381901 #40107]  INFO -- : worker=1 spawned pid=40107
+I, [2016-09-18T17:43:23.382014 #40096]  INFO -- : worker=3 spawning...
+I, [2016-09-18T17:43:23.382029 #40107]  INFO -- : worker=1 ready
+I, [2016-09-18T17:43:23.382790 #40096]  INFO -- : worker=4 spawning...
+I, [2016-09-18T17:43:23.383179 #40113]  INFO -- : worker=3 spawned pid=40113
+I, [2016-09-18T17:43:23.383207 #40110]  INFO -- : worker=2 spawned pid=40110
+I, [2016-09-18T17:43:23.383311 #40113]  INFO -- : worker=3 ready
+I, [2016-09-18T17:43:23.383338 #40110]  INFO -- : worker=2 ready
+I, [2016-09-18T17:43:23.383968 #40096]  INFO -- : master process ready
+I, [2016-09-18T17:43:23.384340 #40116]  INFO -- : worker=4 spawned pid=40116
+I, [2016-09-18T17:43:23.384473 #40116]  INFO -- : worker=4 ready
+I, [2016-09-18T17:47:55.975430 #40096]  INFO -- : reaped #<Process::Status: pid 40104 exit 0> worker=0
+I, [2016-09-18T17:47:55.975512 #40096]  INFO -- : reaped #<Process::Status: pid 40107 exit 0> worker=1
+I, [2016-09-18T17:47:55.975550 #40096]  INFO -- : reaped #<Process::Status: pid 40110 exit 0> worker=2
+I, [2016-09-18T17:47:55.975580 #40096]  INFO -- : reaped #<Process::Status: pid 40113 exit 0> worker=3
+I, [2016-09-18T17:47:55.975607 #40096]  INFO -- : reaped #<Process::Status: pid 40116 exit 0> worker=4
+I, [2016-09-18T17:47:55.975685 #40096]  INFO -- : master complete
+I, [2016-09-18T17:47:56.252666 #40332]  INFO -- : Refreshing Gem list
+I, [2016-09-18T17:47:56.308333 #40332]  INFO -- : unlinking existing socket=/tmp/isuda-unicorn.sock
+I, [2016-09-18T17:47:56.308475 #40332]  INFO -- : listening on addr=/tmp/isuda-unicorn.sock fd=9
+I, [2016-09-18T17:47:56.308652 #40332]  INFO -- : listening on addr=0.0.0.0:5000 fd=10
+I, [2016-09-18T17:47:56.308730 #40332]  INFO -- : worker=0 spawning...
+I, [2016-09-18T17:47:56.309459 #40332]  INFO -- : worker=1 spawning...
+I, [2016-09-18T17:47:56.309993 #40336]  INFO -- : worker=0 spawned pid=40336
+I, [2016-09-18T17:47:56.310119 #40336]  INFO -- : worker=0 ready
+I, [2016-09-18T17:47:56.310756 #40332]  INFO -- : master process ready
+I, [2016-09-18T17:47:56.311166 #40339]  INFO -- : worker=1 spawned pid=40339
+I, [2016-09-18T17:47:56.311282 #40339]  INFO -- : worker=1 ready
+I, [2016-09-18T17:48:14.899701 #40332]  INFO -- : reaped #<Process::Status: pid 40336 exit 0> worker=0
+I, [2016-09-18T17:48:14.899771 #40332]  INFO -- : reaped #<Process::Status: pid 40339 exit 0> worker=1
+I, [2016-09-18T17:48:14.899822 #40332]  INFO -- : master complete
